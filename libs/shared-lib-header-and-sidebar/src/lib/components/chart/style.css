@@ -1,0 +1,214 @@
+.apexcharts-canvas text{
+    direction:ltr;
+}
+.rtl-chart .apexcharts-tooltip{
+    direction: rtl;
+    text-align: right;
+    font-family: IRANSansWeb!important;
+}
+
+.rtl-chart .apexcharts-tooltip-marker {
+    margin-left: 10px;
+    margin-right: 0!important;
+}
+
+.rtl-chart .apexcharts-tooltip-text-y-value{
+    margin-left: 0!important;
+    margin-right: 5px;
+}
+.rtl-chart .apexcharts-text tspan ,
+.rtl-chart .apexcharts-tooltip * {
+    font-family: IRANSansWeb!important;
+}
+
+.rtl-chart .apexcharts-legend-series{
+    direction: rtl;
+}
+
+.rtl-chart .apexcharts-legend-series .apexcharts-legend-marker {
+    right: -4px !important;
+    left:unset!important;
+}
+.rtl-chart .apexcharts-legend-marker {
+    margin-left: 3px;
+    margin-right: 0;
+}
+
+.rtl-chart .apexcharts-legend.apx-legend-position-bottom,.rtl-chart .apexcharts-legend.apx-legend-position-top{
+    direction: rtl;
+}
+
+.apexcharts-legend-series{
+    margin: 7px 15px!important;
+}
+
+@media (max-width: 767px) {
+
+    .grid-popover.chart .MuiPaper-root{
+        left: 0!important;
+    }
+}
+
+
+
+.field-list{
+    margin: 0;
+    padding: 0;
+}
+.field-list li{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.field-list li label{
+    margin-right: 0;
+}
+
+.field-list li label span{
+    font-size: 12px;
+}
+
+
+
+.saved-item{
+    align-items: center;
+    border-bottom: solid 1px #eee;
+    padding: 8px 3px;
+}
+
+.saved-item .index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    background: #eee;
+    color: #666;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.saved-item .title{
+    font-size: 11px!important;
+    margin: 0 3px!important;
+    font-weight: 600!important;
+    border: 1px solid #e1e1e1;
+    background: #e9ecefd2;
+    padding: 4px 5px;
+    box-sizing: border-box;
+    width: 35%;
+    height: 25px;
+}
+
+.saved-item svg{
+    font-size: 20px;
+}
+
+
+.popover-title{
+    font-weight: 400;
+    font-size: 13px;
+    margin: 0 0 15px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #eee;
+    position: relative;
+    padding-right: 4px;
+}
+
+.popover-title:after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background: #1890ff;
+}
+
+
+.custom-select-item{
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+}
+
+.custom-select-item svg{
+    fill: #1890ff;
+    width: 19px;
+    margin-right: 7px;
+}
+
+.custom-select-item.rtl svg{
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+
+.grid-popover label{
+    margin: 0;
+}
+
+.grid-popover label h6{
+    font-size: 12px;
+    transition: color .2s ease;
+}
+
+.grid-popover label:hover h6{
+    color: #1890ff;
+}
+
+.grid-popover .MuiCheckbox-root{
+    padding: 0;
+    margin: 0 3px;
+}
+
+.grid-popover .title{
+    font-size: 12px;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.grid-popover .form-input{
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 4px 5px;
+    font-size: 12px;
+    box-sizing: border-box;
+    max-width: 100%;
+    outline: 0;
+    height: 30px;
+}
+
+.MuiRadio-root{
+    padding: 0 2px;
+}
+
+.MuiRadio-root .MuiSvgIcon-root{
+    width: 20px;
+    height: 20px;
+}
+
+.grid-popover .field-list{
+    margin: 0;
+    padding: 0;
+
+}
+.grid-popover .field-list li{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.grid-popover .field-list li label{
+    margin: 0;
+}
+
+.grid-popover .field-list li label h6{
+    font-size: 12px;
+    transition: color .2s ease;
+}
+
+.grid-popover .field-list li label:hover h6{
+    color: #1890ff;
+}

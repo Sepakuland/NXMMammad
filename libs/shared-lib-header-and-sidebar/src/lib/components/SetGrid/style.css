@@ -1,0 +1,329 @@
+
+/*.row {*/
+/*    padding: 0;*/
+/*}*/
+
+.kara-set-grid svg {
+    width: 100%;
+}
+
+.kara-set-grid div text {
+    margin-top: 10px;
+}
+
+.kara-set-grid .tdgridstyle {
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+.tablestyle{
+    color: #222!important;
+}
+
+.kara-set-grid .tablestyle {
+    border: 1px black;
+    font-size: 9.6px;
+    direction:rtl
+}
+
+.kara-set-grid .tablestyle.ltr{
+    direction:ltr
+}
+
+.kara-set-grid thead{
+    background: #bacef3;
+    position: sticky;
+    top:0;
+    z-index: 5;
+}
+
+.kara-set-grid .thstyle {
+
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 1px solid grey;
+    background: #bacef3;
+    text-align:center;
+
+}
+.kara-set-grid .thstyle:last-child {
+
+    border-left: none;
+
+}
+.kara-set-grid .leftheader{
+    text-align: center;
+
+}
+
+.kara-set-grid .MuiPaper-root {
+    overflow: hidden;
+}
+
+.kara-set-grid .line {
+    height: 2px;
+    background: black;
+    position: absolute;
+    transform-origin: top left;
+    cursor: pointer;
+}
+
+.kara-set-grid .circle {
+    background: #6390e3;
+    border-radius: 15px;
+    height: 9px;
+    width: 9px;
+    position: absolute;
+    z-index: 72;
+}
+
+.kara-set-grid .dx-scrollable-container {
+    direction: revert !important;
+}
+
+.kara-set-grid .right-grid .dx-datagrid-headers {
+    padding: 0 0 0 0 !important;
+    font-size: 10px;
+}
+
+.kara-set-grid .dx-scrollable-scroll-content {
+    background: steelblue !important;
+}
+
+.kara-set-grid .left-grid .dx-datagrid-headers {
+    padding: 0 0 0 0 !important;
+    font-size: 10px;
+}
+
+.kara-set-grid .right-grid {
+    font-size: 12px !important;
+}
+
+.kara-set-grid .left-grid {
+    font-size: 12px !important;
+}
+
+.kara-set-grid .MuiSvgIcon-root
+.MuiSvgIcon-fontSizeMedium
+.css-i4bv87-MuiSvgIcon-root
+.SelectedLine {
+    pointer-events: none !important;
+}
+
+.kara-set-grid .iconcss {
+    pointer-events: none !important;
+    box-shadow: none !important;
+}
+
+.kara-set-grid .closebtn {
+    height: 28px;
+    width: 35px;
+    z-index: 60;
+    color: rgb(221, 7, 7);
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 142%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background: none;
+    box-shadow: unset !important;
+}
+/* #rightTR{
+
+  background: #ffa !important;
+} */
+
+.kara-set-grid .red {
+    background: #ccff99;
+}
+
+.kara-set-grid .green {
+    background: #fcb1b1;
+}
+
+.kara-set-grid .select-row {
+    background-color: #fdf387 !important;
+}
+/* .select-row-left{
+  background-color: #ffa !important;
+} */
+
+.kara-set-grid th {
+    font-weight: unset;
+    border-bottom: 1px solid gray;
+}
+
+.kara-set-grid tr {
+    z-index:40;
+    /*border-bottom: 1px solid gray;*/
+}
+
+.kara-set-grid p {
+    font-size: 12px;
+}
+
+.kara-set-grid .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.kara-set-grid .checkbox-label input[type="checkbox"].form-input {
+    width: 15px;
+    height: 20px;
+    margin-left: 7px;
+    border-radius: 0;
+}
+
+.kara-set-grid .newth {
+    width: 70px;
+}
+
+.kara-set-grid .SelectedLine {
+    box-shadow: 5px 0.5px 5px 8px #fdf387;
+    z-index: 70;
+}
+
+.kara-set-grid .Zclass {
+    z-index: 70;
+    box-shadow: unset !important;
+}
+
+.kara-set-grid .td-border {
+    border-right: 1px solid grey;
+}
+
+.kara-set-grid .tablestyle.rtl .td-border:first-child {
+    border-right: none;
+}
+
+.kara-set-grid .tablestyle.ltr .td-border:first-child {
+    border-left: none;
+}
+
+.kara-set-grid .tablestyle.ltr .td-border:last-child {
+    border-right: none;
+}
+
+.kara-set-grid .td-border button {
+    min-width: auto;
+    padding: 3px 5px;
+}
+
+.kara-set-grid .middleCol {
+    position: relative;
+}
+
+.modal-header.header-ltr {
+    direction: ltr;
+  }
+  
+
+.kara-set-grid .middleCol:before {
+    content: "";
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 75;
+    position: absolute;
+}
+
+.kara-set-grid .ExtraSetbtn {
+    background: transparent;
+    border: 1px solid #6390e3;
+    border-radius: 5px;
+    color: #6390e3;
+    font-size: 12px;
+    cursor: pointer;
+    max-width: 83%;
+    overflow: hidden;
+    word-break: break-all;
+    transition:all .3s linear
+}
+.kara-set-grid .ExtraSetbtn:hover {
+    background: #6390e3;
+    color:#fff;
+
+}
+
+#dialogTable  {
+    text-align: center;
+    border: 1px solid grey;
+    color: #222 !important;
+}
+
+ #dialogTable th  {
+    
+    border-left: 1px solid grey;
+    background: #bacef3;
+    text-align: center;
+}
+#dialogTable div {
+    border-right: 1px solid grey;
+   
+}
+
+#dialogTable div:first-child {
+    border-right: none;
+}
+.kara-set-grid .headerstyle {
+    background: #bacef3;
+    text-align: center;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1 !important;
+}
+.form-input {
+    border: 1px solid #e1e1e1;
+    font-family: "IRANSansWeb!important";
+    background: #e9ecefd2;
+    padding: 7px 5px;
+    font-size: 11px;
+    box-sizing: border-box;
+    max-width: 100% !important;
+    height: 35px;
+    outline: 0;
+  }
+
+
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+
+
+.discount-btn{
+    font-weight: bold;
+}
+
+.kara-dialog.rtl{
+    direction:rtl
+}
+
+.kara-dialog .MuiPaper-root{
+    overflow-x: hidden;
+}
+
+
+.fa-bold{
+    font-weight: bold;
+}

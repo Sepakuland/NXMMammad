@@ -1,0 +1,186 @@
+.ant-upload.disable{
+    pointer-events: none!important;
+}
+
+.ant-upload-list-picture-card-container {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin: 0 8px 8px 0;
+    vertical-align: top;
+}
+
+.ant-upload-list-picture-card-container .item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.ant-upload-list-picture-card-container .item .info{
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    direction: ltr;
+    text-overflow: ellipsis;
+}
+
+.ant-upload-list-picture-card-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.ant-upload-list-picture-card-container .remove-actions-btn{
+    position: absolute;
+    border: 0;
+    outline: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 5;
+    transition: background-color .3s ease;
+    color: red;
+    cursor: pointer;
+}
+
+.ant-upload-list-picture-card-container .remove-actions-btn:hover{
+    background-color: #f5f5f5;
+}
+
+.ant-upload-list-picture-card-container .remove-actions-btn svg{
+    width: 20px;
+}
+
+.ant-upload{
+    font-weight: 500;
+    font-size: 14px!important;
+    color: #0078D4!important;
+}
+
+.ant-upload.ant-upload-select-picture-card{
+    width: 185px!important;
+    height: 185px!important;
+    margin-right: 0!important;
+    margin-bottom: 0!important;
+    background: #FFFFFF!important;
+    border: 0.7px dashed #0078D4!important;
+    border-radius: 5px!important;
+    text-align: center!important;
+
+}
+
+.avatar-uploader {
+    margin-left: 50px!important;
+}
+
+.avatar-uploader.ml-custom {
+    margin-left: 25px!important;
+}
+
+.file-uploader{
+    width: 130px;
+    height: 130px;
+    background: #FFFFFF;
+    border: 0.7px dashed #0078D4;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.avatar-uploader *,.file-uploader *{
+    cursor: pointer;
+}
+
+.ant-upload.ant-upload-select-picture-card svg{
+    display: block;
+    margin: 0 auto 6px;
+}
+
+.ant-upload-list{
+    direction: ltr!important;
+    text-align: right;
+}
+
+a.ant-upload-list-item-thumbnail{
+    pointer-events: none;
+}
+
+.ant-upload-list-picture .ant-upload-list-item, .ant-upload-list-picture-card .ant-upload-list-item{
+    background: #FFFFFF;
+    border: 1px solid #0078D4!important;
+    box-sizing: border-box;
+    border-radius: 5px!important;
+}
+
+.ant-upload-list-rtl .ant-upload-list-picture-card-container {
+    margin: 0 0 10px 10px!important;
+}
+
+.pic-require.w-100 .ant-upload-picture-card-wrapper,
+.pic-require.w-100{
+    width: 100%!important;
+    margin-left: 0!important;
+}
+
+.pic-require.w-100 .ant-upload.ant-upload-select-picture-card {
+    width: 100%!important;
+}
+
+@media (max-width: 767px) {
+    .file-uploader {
+        width: 100px;
+        height: 100px;
+    }
+    .ant-upload {
+        font-size: 11px!important;
+    }
+    .ant-upload svg{
+        width: 18px;
+    }
+    .ant-upload-list-picture-card-container {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .file-uploader {
+        width: 70px;
+        height: 70px;
+    }
+    .ant-upload {
+        font-size: 10px!important;
+    }
+    .ant-upload svg{
+        width: 14px;
+    }
+    .ant-upload-list-picture-card-container {
+        width: 70px;
+        height: 70px;
+    }
+    .ant-upload-list-picture-card-container .remove-actions-btn svg {
+        width: 15px;
+    }
+    .ant-upload-list-picture-card-container .remove-actions-btn {
+        top: 3px;
+        right: 3px;
+        width: 25px;
+        height: 25px;
+    }
+}

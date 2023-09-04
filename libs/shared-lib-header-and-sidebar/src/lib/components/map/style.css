@@ -1,0 +1,14 @@
+
+
+.map-modal-content{
+    padding: 15px;
+}
+.loading-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    background: rgb(255 255 255 / 51%);
+    z-index: 5;
+}
