@@ -1,0 +1,684 @@
+import React, { useEffect, useRef, useState } from 'react'
+import { Autocomplete, Box, Button, IconButton, TextField, useTheme } from '@mui/material';
+import { definedAccountLookupData, descriptiveLookupData } from '../../../PaymentDocumention/Cash/Display/lookupData';
+import { useTranslation } from 'react-i18next';
+import { FieldArray, FormikProvider, useFormik } from 'formik';
+import * as Yup from "yup"
+import swal from 'sweetalert';
+import CashData from '../../../PaymentDocumention/Cash/Display/CashData.json'
+import { parsFloatFunction } from '../../../../../utils/parsFloatFunction';
+import CurrencyInput from 'react-currency-input-field';
+import DateObject from 'react-date-object';
+import DeleteIcon from '@mui/icons-material/Delete';
+import AddIcon from '@mui/icons-material/Add';
+import { useSearchParams } from "react-router-dom";
+import { history } from "../../../../../utils/history";
+import { findNextFocusable, findPreviousFocusable, MoveNext, MovePrevious } from '../../../../../utils/gridKeyboardNav3';
+import Guid from 'devextreme/core/guid';
+
+export default function EditMultiPlexing() {
+    const emptyArticles = { formikId: new Guid().valueOf(), definedAccount: '', descriptive: "", price: 0 };
+
+
+
+    const emptyArticlesTouch = { definedAccount: false, descriptive: false, price: false };
+
+
+    const { t, i18n } = useTranslation()
+
+    const theme = useTheme();
+
+
+    const [searchParams] = useSearchParams();
+    const [rowData, setRowdata] = useState([]);
+
+    const id = searchParams.get('id')
+    useEffect(() => {
+        let SearchRow = CashData.filter((item) => item.DocumentCode == id)
+        console.log('SearchRow', SearchRow)
+        let tempData = SearchRow.map((data) => {
+            let temp = (data.Price).toString().replaceAll(',', '')
+            let cost = parseFloat(temp, 2)
+
+            return {
+                ...data,
+                DocumentDate: new Date(data.DocumentDate),
+                Price: cost,
+                DocumentCode: parseInt(data.DocumentCode),
+                PartnerTelephones: data.PartnerTelephones !== '' ? parseInt(data.PartnerTelephones) : '',
+            }
+        })
+        console.log('tempData', tempData)
+        setRowdata(tempData)
+        formik.setFieldValue('initialBalance', tempData[0]?.Price)
+    }, [])
+
+    const firstArticles = { definedAccount: '', descriptive: rowData?.PartnerName, price: rowData?.Price };
+
+    const [priceTotal, setPriceTotal] = useState(0)
+    const [click, setClick] = useState(false)
+
+    const dateRef = useRef()
+    const [fileList, setFileList] = useState()
+    const [uploadError, setUploadError] = useState(false)
+    const [initialState, setInitialState] = useState({})
+
+
+    console.log('', rowData)
+
+    const formik = useFormik({
+        initialValues: {
+
+            documentArticles: [emptyArticles],
+            balance: 0,
+            initialBalance: 0
+        },
+
+        validationSchema: Yup.object({
+
+
+            initialBalance: Yup.number(),
+
+            documentArticles: Yup.array(
+                Yup.object({
+                    definedAccount: Yup.string().required('حساب معین باید انتخاب گردد'),
+                    price: Yup.number().min(0, "میزان مبلغ باید مثبت باشد"),
+
+
+                })
+            ),
+            balance: Yup.number().when("initialBalance", (initialBalance) => {
+                console.log('initialBalance', initialBalance)
+                console.log('formik.values.balance', formik.values.balance)
+                console.log('-----', parseFloat(initialBalance) !== parseFloat(formik.values.balance))
+                if (parseFloat(initialBalance) !== parseFloat(formik.values.balance))
+                    return Yup.number().min(initialBalance, "جمع مبلغ موارد وارد شده با کل مبلغ پرداختی یکسان نیست.").max(initialBalance, "جمع مبلغ موارد وارد شده با کل مبلغ پرداختی یکسان نیست.")
+            }),
+
+        }),
+
+
+
+
+
+        validateOnChange: false,
+        onSubmit: (values) => {
+
+            DocumentSub()
+            console.log('All Values:', values)
+        }
+    })
+
+    console.log('Formik', formik.errors)
+    const DocumentSub = () => {
+        swal({
+            title: t("سند با موفقیت ثبت شد"),
+            icon: "success",
+            button: t("باشه")
+        });
+    }
+    const tableError = () => {
+        swal({
+            title: t('خطاهای مشخص شده را برطرف کنید'),
+            icon: "error",
+            button: t("باشه")
+        });
+    }
+
+
+    console.log('formik.values', formik.values)
+    console.log('formik.errors', formik.errors)
+
+
+    function updateFileList(list) {
+        setFileList(list)
+    }
+    const [date, setDate] = useState(new DateObject())
+
+    useEffect(() => {
+        if (rowData.length && formik.values.documentArticles.length == 0) {
+            formik.setFieldValue('documentArticles', [{ definedAccount: '', descriptive: "0101001", price: rowData[0]?.Price }])
+            setInitialState({ "Code": "00000002", "Name": "وام مضاربه ای بانک سپه" })
+        }
+    }, [rowData])
+
+    //function renderBalanceClassName() {
+    //    if (creditsTotal > debitsTotal) {
+    //        return "balanceFieldGreen"
+    //    }
+    //    else if (creditsTotal < debitsTotal) {
+    //        return "balanceFieldRed"
+    //    }
+    //    else {
+    //        return ""
+    //    }
+    //}
+    function HandleBalanceChange(value) {
+        let temp = value.replaceAll(',', '')
+        formik.setFieldValue('balance', parsFloatFunction(temp, 2))
+    }
+    //function renderBalanceState() {
+    //    if (creditsTotal > debitsTotal) {
+    //        return t("بستانکار")
+    //    }
+    //    else if (creditsTotal < debitsTotal) {
+    //        return t("بدهکار")
+    //    }
+    //    else {
+    //        return ""
+    //    }
+    //}
+    ///////End of Form Functions\\\\\\\\\\\\
+
+
+
+
+
+    ///// Items Grid \\\\\
+    const [itemsFocusedRow, setItemsFocusedRow] = useState(1)
+    const [definedAccountOpen, setDefinedAccountOpen] = useState(false)
+    const [descriptiveOpen, setDescriptiveOpen] = useState(false)
+    const [container, setContainer] = useState([])
+    function adddocumentArticlesRow() {
+        formik.setFieldValue('documentArticles', [...formik.values.documentArticles, emptyArticles])
+        setContainer([...container, 0])
+    }
+    function RenderItemDefinedAccountOpenState(index, state) {
+        if (index === itemsFocusedRow - 1) {
+            setDefinedAccountOpen(state)
+        }
+        else {
+            setDefinedAccountOpen(false)
+        }
+    }
+    function RenderItemDescriptiveOpenState(index, state) {
+        if (index === itemsFocusedRow - 1) {
+            setDescriptiveOpen(state)
+        }
+        else {
+            setDescriptiveOpen(false)
+        }
+    }
+
+    function itemsKeyDownHandler(e) {
+        let next = e.target.closest("td").nextSibling
+        while (next.cellIndex !== next.closest("tr").children.length - 1 && (next.querySelector("button") || next.querySelector("input").disabled)) {
+            next = findNextFocusable(next)
+        }
+
+        let prev = e.target.closest("td").previousSibling
+        while (prev.cellIndex !== 0 && (prev.querySelector("button") || prev.querySelector("input").disabled)) {
+            prev = findPreviousFocusable(prev)
+        }
+
+        if (e.keyCode === 40 && definedAccountOpen === false && descriptiveOpen === false) { /* Down Arrowkey */
+            e.preventDefault()
+            if (formik.values.documentArticles.length === itemsFocusedRow) {
+                adddocumentArticlesRow()
+                setTimeout(() => {
+                    let temp = next.closest("tr").nextSibling.children[e.target.closest("td").cellIndex]
+                    while (temp.cellIndex !== temp.closest("tr").children.length - 1 && (temp.querySelector("button") || temp.querySelector("input").disabled)) {
+                        temp = findNextFocusable(temp)
+                    }
+                    temp.querySelector("input").focus()
+                    temp.querySelector("input").select()
+                }, 0);
+            }
+            else {
+                let down = e.target.closest("tr").nextSibling.children[e.target.closest("td").cellIndex].querySelector("input")
+                down.focus()
+                down.select()
+            }
+        }
+        if (e.keyCode === 38 && definedAccountOpen === false && descriptiveOpen === false) { /* Up ArrowKey */
+            e.preventDefault()
+            let up = e.target.closest("tr").previousSibling.children[e.target.closest("td").cellIndex].querySelector("input")
+            up.focus()
+            up.select()
+        }
+
+        if (e.keyCode === 39) { /* Right ArrowKey */
+            i18n.dir() === "rtl" ? MovePrevious(prev) : MoveNext(formik.values.documentArticles, adddocumentArticlesRow, next, itemsFocusedRow)
+        }
+        if (e.keyCode === 37) { /* Left ArrowKey */
+            i18n.dir() === "ltr" ? MovePrevious(prev) : MoveNext(formik.values.documentArticles, adddocumentArticlesRow, next, itemsFocusedRow)
+        }
+        if (e.keyCode === 13 && definedAccountOpen === false && descriptiveOpen === false) { /* Enter */
+            MoveNext(formik.values.documentArticles, adddocumentArticlesRow, next, itemsFocusedRow)
+        }
+        else if (e.keyCode === 13) {    /* Enter */
+            e.preventDefault()
+            MoveNext(formik.values.documentArticles, adddocumentArticlesRow, next, itemsFocusedRow)
+        }
+        if (e.keyCode === 9) { /* Tab */    /*MUST BECOME LANGUAGE DEPENDANT */
+            e.preventDefault()
+            if (e.shiftKey === false) {
+                MoveNext(formik.values.documentArticles, adddocumentArticlesRow, next, itemsFocusedRow)
+            }
+            else {
+                MovePrevious(prev)
+            }
+        }
+    }
+    ///// End of Items Grid \\\\\
+
+    //////Start of Grid Functions\\\\\\\\\\\
+
+
+    const [errorDialogState, setErrorDialogState] = useState(false)
+
+
+    useEffect(() => {
+        if (click) {
+            tableError()
+            setClick(false)
+        }
+
+    }, [formik.errors.documentArticles])
+
+
+
+    function HandlePriceChange(index, value) {
+        let temp = value.replaceAll(',', '')
+        formik.setFieldValue(`documentArticles[${index}].price`, parsFloatFunction(temp, 2))
+    }
+
+
+
+    useEffect(() => {
+        let priceTemp = 0
+        formik.values.documentArticles.forEach(element => {
+            priceTemp += element.price
+            setPriceTotal(parsFloatFunction(priceTemp, 2))
+        });
+
+
+    }, [formik.values.documentArticles])
+
+    useEffect(() => {
+        formik.setFieldValue("balance", priceTotal)
+    }, [priceTotal])
+
+    // useEffect(() => {
+    //     if (formik.errors.documentArticles)
+    //         setErrorDialogState(true)
+    // }, [formik.errors])
+
+    //Grid End
+
+
+    return (
+        <>
+            <div
+                className='form-template' style={{
+                    backgroundColor: `${theme.palette.background.paper}`,
+                    borderColor: `${theme.palette.divider}`
+                }}
+            >
+                <div>
+                    <div className='row'>
+
+                        <div className='col-12 '>
+                            <FormikProvider value={formik}>
+                                <form onSubmit={formik.handleSubmit}>
+
+                                    <div className=' col-12'>
+                                        <div className='form-design'>
+                                            <div className='row'>
+                                                <div className='col-lg-12 col-12'>
+                                                    <div className='row align-items-center'>
+                                                        <div className='content col-md-4 col-12'>
+                                                            <div className='title mb-0'>
+                                                                <span className='span'> {t("طرف حساب های این پرداخت خزانه داری")}:</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className='content col-md-8 col-12'>
+
+                                                            {/* Copyright Ghafourian© Grid V3.0
+                                                            All rights reserved */}
+                                                            <div className='d-flex justify-content-end align-items-center'>
+                                                                <div className='title mb-0' style={i18n.dir() === 'rtl' ? { marginLeft: '10px' } : { marginRight: '10px' }}>
+                                                                    <span> {t("کل مبلغ پرداختی")} </span>
+                                                                </div>
+                                                                <div className='wrapper' style={i18n.dir() === 'rtl' ? { marginLeft: '10px' } : { marginRight: '10px' }}>
+                                                                    <div>
+                                                                        <input
+                                                                            className='form-input'
+                                                                            type="text"
+                                                                            name="totalamount"
+
+                                                                            style={{ width: "100%" }}
+                                                                            onChange={formik.handleChange}
+                                                                            onBlur={formik.handleBlur}
+                                                                            value={rowData[0]?.Price}
+                                                                            disabled
+                                                                        />
+                                                                    </div>
+                                                                </div>
+
+                                                                <Button
+                                                                    variant="outlined"
+                                                                    className="grid-add-btn"
+                                                                    onClick={(e) => {
+                                                                        adddocumentArticlesRow()
+                                                                        setTimeout(() => {
+                                                                            let added = e.target.closest("div").parentElement.nextSibling.querySelector('tbody tr:last-child td:nth-child(2)')
+                                                                            while (added.querySelector("button") || added.querySelector("input").disabled) {
+                                                                                added = findNextFocusable(added)
+                                                                            }
+                                                                            added.querySelector("input").focus()
+                                                                        }, 0);
+                                                                    }}
+
+                                                                >
+                                                                    <AddIcon />
+                                                                </Button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className='content col-lg-12 col-12'>
+                                                            <div className={`table-responsive gridRow ${theme.palette.mode === 'dark' ? 'dark' : ''}`}>
+
+                                                                <table className="table table-bordered">
+                                                                    <thead>
+                                                                        <tr className='text-center'>
+                                                                            <th >{t("ردیف")}</th>
+                                                                            <th >{t("حساب معین خاص")}</th>
+                                                                            <th>{t("تفضیلی/طرف حساب")}</th>
+                                                                            <th>{t("مبلغ")}</th>
+                                                                            <th>{t("حذف")}</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <FieldArray
+                                                                            name="documentArticles"
+                                                                            render={({ push, remove }) => (
+                                                                                <React.Fragment>
+                                                                                    {formik?.values?.documentArticles?.map((documentArticles, index) => (
+                                                                                        <tr key={documentArticles.formikId} onFocus={(e) => setItemsFocusedRow(e.target.closest("tr").rowIndex)}
+                                                                                            className={itemsFocusedRow === index + 1 ? 'focus-row-bg' : ''}
+                                                                                        >
+                                                                                            <td className='text-center' style={{ verticalAlign: 'middle', width: '40px' }}>
+                                                                                                {index + 1}
+                                                                                            </td>
+                                                                                            <td style={{ minWidth: '120px' }}>
+
+                                                                                                <div className={`table-autocomplete `}>
+                                                                                                    <Autocomplete
+                                                                                                        componentsProps={{
+                                                                                                            paper: {
+                                                                                                                sx: {
+                                                                                                                    width: 300,
+                                                                                                                    direction: i18n.dir(),
+                                                                                                                    position: "absolute",
+                                                                                                                    fontSize: '12px',
+                                                                                                                    right: "0"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }}
+                                                                                                        sx={
+                                                                                                            {
+                                                                                                                direction: i18n.dir(),
+                                                                                                                position: "relative",
+                                                                                                                background: '#e9ecefd2',
+                                                                                                                borderRadius: 0,
+                                                                                                                fontSize: '12px'
+                                                                                                            }
+
+                                                                                                        }
+                                                                                                        open={itemsFocusedRow === index + 1 ? definedAccountOpen : false}
+                                                                                                        size="small"
+                                                                                                        isOptionEqualToValue={(option, value) => option?.value === value?.value}
+                                                                                                        disableClearable={true}
+                                                                                                        forcePopupIcon={false}
+                                                                                                        id="definedAccount"
+                                                                                                        name={`documentArticles.${index}.definedAccount`}
+
+                                                                                                        noOptionsText={t("اطلاعات یافت نشد")}
+                                                                                                        options={definedAccountLookupData}
+                                                                                                        getOptionLabel={option => option.FormersNames}
+                                                                                                        renderOption={(props, option) => (
+                                                                                                            <Box component="li" {...props}>
+                                                                                                                {option.Code}-({option.FormersNames})
+                                                                                                            </Box>
+                                                                                                        )}
+                                                                                                        filterOptions={(options, state) => {
+                                                                                                            let newOptions = [];
+                                                                                                            options.forEach((element) => {
+                                                                                                                if (
+                                                                                                                    element.Code.includes(state.inputValue.toLowerCase()) ||
+                                                                                                                    element.FormersNames.replace("/", "").toLowerCase().includes(state.inputValue.toLowerCase())
+                                                                                                                )
+                                                                                                                    newOptions.push(element);
+                                                                                                            });
+                                                                                                            return newOptions;
+                                                                                                        }}
+
+
+                                                                                                        //          style={{ width: 300 }}
+                                                                                                        onInputChange={(event, value) => {
+                                                                                                            if (value !== "" && event !== null) {
+                                                                                                                RenderItemDefinedAccountOpenState(index, true)
+
+                                                                                                            }
+                                                                                                            else {
+                                                                                                                RenderItemDefinedAccountOpenState(index, false)
+
+                                                                                                            }
+                                                                                                        }}
+                                                                                                        onChange={(event, value) => {
+
+                                                                                                            RenderItemDefinedAccountOpenState(index, false)
+
+                                                                                                            formik.setFieldValue(`documentArticles[${index}].definedAccount`, value.Code)
+                                                                                                        }}
+                                                                                                        onBlur={(e) => {
+                                                                                                            RenderItemDefinedAccountOpenState(index, false)
+                                                                                                        }}
+                                                                                                        onSubmit={(e) => console.log(e)}
+                                                                                                        renderInput={params => (
+                                                                                                            <TextField {...params} label="" variant="outlined" />
+                                                                                                        )}
+                                                                                                        onKeyDown={(e) => {
+                                                                                                            if ((e.keyCode === 13 || e.keyCode === 9 || e.keyCode === 38 || e.keyCode === 40 || e.keyCode === 37 || e.keyCode === 39) && definedAccountOpen[index] === false) {    /* Enter */
+                                                                                                                e.preventDefault()
+                                                                                                                RenderItemDefinedAccountOpenState(index, false)
+                                                                                                            }
+                                                                                                            setTimeout(() => {
+                                                                                                                itemsKeyDownHandler(e)
+                                                                                                            }, 0);
+                                                                                                        }}
+                                                                                                    />
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td style={{ minWidth: '120px' }} >
+                                                                                                <div className={`table-autocomplete `}>
+                                                                                                    <Autocomplete
+                                                                                                        // defaultValue={index == 0 ? initialState : { Code: "", Name: "" }}
+                                                                                                        componentsProps={{
+                                                                                                            paper: {
+                                                                                                                sx: {
+                                                                                                                    width: 300,
+                                                                                                                    direction: i18n.dir(),
+                                                                                                                    position: "absolute",
+                                                                                                                    fontSize: '12px',
+                                                                                                                    right: "0"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }}
+                                                                                                        sx={
+                                                                                                            {
+                                                                                                                direction: i18n.dir(),
+                                                                                                                position: "relative",
+                                                                                                                background: '#e9ecefd2',
+                                                                                                                borderRadius: 0,
+                                                                                                                fontSize: '12px'
+                                                                                                            }
+
+                                                                                                        }
+                                                                                                        open={itemsFocusedRow === index + 1 ? descriptiveOpen : false}
+                                                                                                        size="small"
+                                                                                                        disableClearable={true}
+                                                                                                        forcePopupIcon={false}
+                                                                                                        id="descriptive"
+                                                                                                        name={`documentArticles.${index}.descriptive`}
+                                                                                                        noOptionsText={t("اطلاعات یافت نشد")}
+                                                                                                        options={descriptiveLookupData}
+                                                                                                        getOptionLabel={option => option.Name}
+                                                                                                        renderOption={(props, option) => (
+                                                                                                            <Box component="li" {...props}>
+                                                                                                                {option.Code}-({option.Name})
+                                                                                                            </Box>
+                                                                                                        )}
+                                                                                                        filterOptions={(options, state) => {
+                                                                                                            let newOptions = [];
+                                                                                                            options.forEach((element) => {
+                                                                                                                if (
+                                                                                                                    element.Code.includes(state.inputValue.toLowerCase()) ||
+                                                                                                                    element.Name.replace("/", "").toLowerCase().includes(state.inputValue.toLowerCase())
+                                                                                                                )
+                                                                                                                    newOptions.push(element);
+                                                                                                            });
+                                                                                                            return newOptions;
+                                                                                                        }}
+
+                                                                                                        onInputChange={(event, value) => {
+                                                                                                            if (value !== "" && event !== null) {
+
+                                                                                                                RenderItemDescriptiveOpenState(index, true)
+                                                                                                            }
+                                                                                                            else {
+                                                                                                                RenderItemDescriptiveOpenState(index, false)
+                                                                                                            }
+                                                                                                        }}
+                                                                                                        onChange={(event, value) => {
+                                                                                                            RenderItemDescriptiveOpenState(index, false)
+                                                                                                            formik.setFieldValue(`documentArticles[${index}].descriptive`, value.Code)
+                                                                                                        }}
+                                                                                                        onBlur={(e) => RenderItemDescriptiveOpenState(index, false)}
+                                                                                                        renderInput={params => (
+                                                                                                            <TextField {...params} label="" variant="outlined" />
+                                                                                                        )}
+                                                                                                        onKeyDown={(e) => {
+                                                                                                            if ((e.keyCode === 13 || e.keyCode === 9 || e.keyCode === 38 || e.keyCode === 40 || e.keyCode === 37 || e.keyCode === 39) && descriptiveOpen[index] === false) {    /* Enter */
+                                                                                                                e.preventDefault()
+                                                                                                                RenderItemDescriptiveOpenState(index, false)
+                                                                                                            }
+                                                                                                            setTimeout(() => {
+                                                                                                                itemsKeyDownHandler(e)
+                                                                                                            }, 0);
+                                                                                                        }}
+                                                                                                    />
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td style={{ width: '120px', minWidth: '90px' }}>
+                                                                                                <CurrencyInput
+
+                                                                                                    onKeyDown={(e) => itemsKeyDownHandler(e)}
+                                                                                                    className={`form-input `}
+                                                                                                    style={{ width: "100%" }}
+                                                                                                    id="debits"
+                                                                                                    name={`documentArticles.${index}.debits`}
+                                                                                                    value={formik.values.documentArticles[index].price}
+                                                                                                    decimalsLimit={2}
+                                                                                                    onChange={(e) => HandlePriceChange(index, e.target.value)}
+                                                                                                    autoComplete="off"
+                                                                                                />
+                                                                                            </td>
+
+
+                                                                                            <td style={{ width: '40px' }}>
+                                                                                                <IconButton variant="contained" color="error" className='kendo-action-btn' onClick={() => {
+                                                                                                    remove(index)
+                                                                                                }}>
+                                                                                                    <DeleteIcon />
+                                                                                                </IconButton >
+                                                                                            </td>
+
+                                                                                        </tr>
+                                                                                    ))}
+
+
+                                                                                </React.Fragment>
+
+                                                                            )}>
+                                                                        </FieldArray>
+                                                                    </tbody>
+                                                                    <tfoot>
+                                                                        <tr>
+                                                                            <td>{t('جمع')}:</td>
+                                                                            <td></td>
+                                                                            <td />
+                                                                            <td>
+                                                                                <CurrencyInput
+                                                                                    className='form-input'
+                                                                                    id="debitsTotal"
+                                                                                    disabled
+                                                                                    value={priceTotal}
+                                                                                    name={`documentArticles.debitsTotal`}
+                                                                                    decimalsLimit={2}
+                                                                                    autoComplete="off"
+                                                                                />
+                                                                            </td>
+
+                                                                            <td />
+                                                                        </tr>
+                                                                    </tfoot>
+                                                                </table>
+                                                            </div>
+                                                            {formik?.errors?.documentArticles?.map((error, index) => (
+                                                                <p className='error-msg' key={index}>
+                                                                    {error ? ` ${t("ردیف")} ${index + 1} : ${error?.definedAccount ? t(error.definedAccount) : ""}${error?.debits && error?.definedAccount ? "." : ""} ${error?.debits ? t(error.debits) : ""}${error?.credits ? "." : ""} ${error?.credits ? t(error.credits) : ""}` : null}
+                                                                </p>
+                                                            ))}
+                                                            {formik.errors.balance ? (
+                                                                <div className='error-msg'>
+                                                                    {t(formik.errors.balance)}
+                                                                </div>
+                                                            ) : null}
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </FormikProvider>
+                        </div>
+                    </div>
+                </div>
+            </div >
+            <div>
+                <div className={`button-pos ${i18n.dir == 'ltr' ? 'ltr' : 'rtl'}`}>
+                    <Button
+                        variant="contained"
+                        color="success"
+                        type="submit"
+                        onClick={() => {
+
+                            if (formik.errors.documentArticles || formik.errors.balance) {
+                                tableError()
+                            } else {
+                                setClick(true)
+                            }
+
+                            formik.handleSubmit()
+                        }}
+                    >
+                        {t("تایید")}
+                    </Button>
+
+                    <div className="Issuance">
+                        <Button variant="contained" color="error" onClick={() => { history.navigate(`/FinancialTransaction/receiptDocument/Cheque/DisplayDetails`); }}>
+                            {t("انصراف")}
+                        </Button>
+                    </div>
+                </div>
+            </div>
+
+        </>
+    )
+}
+

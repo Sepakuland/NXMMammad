@@ -1,0 +1,19 @@
+[
+    {
+        "Key": 1,
+        "Value": [
+            {
+                "Code": "50014400",
+                "Name": "پت لیمو یک لیتری 13500 فروش",
+                "Count": "4 باکس",
+                "Fee": "591,000",
+                "Amount": "2,364,000",
+                "RowDiscountValue": "108,744",
+                "RowDiscountPercent": "4.6",
+                "AfterDiscount": "2,255,256",
+                "VAT": "202,973",
+                "FinalAmount": "2,458,229"
+            }
+        ]
+    }
+]

@@ -1,0 +1,162 @@
+[
+  {
+
+    "DocumentCode": "1816",
+    "DocumentDate": "2022/06/29",
+    "PartnerCode": "10001003",
+    "PartnerName": "شرکت ژینا نوش روژهلات",
+    "PartnerLegalName": "شرکت ژینا نوش روژهلات",
+    "PartnerTelephones": "087-09038608011",
+    "PartnerAddress": "تهران صادقیه",
+    "CashAccountName": "صندوق اصلی",
+    "Price": "45,856,120",
+    "SettlementDocuments": "خرید 75",
+    "DocumentDescription": "",
+    "DocumentId": "8d7218b7-724d-457d-9c28-48c713121ffb"
+
+  },
+  {
+
+    "DocumentCode": "1815",
+    "DocumentDate": "2022/06/14",
+    "PartnerCode": "10001013",
+    "PartnerName": "شرکت میهن",
+    "PartnerLegalName": "شرکت میهن",
+    "PartnerTelephones": "021-54256245",
+    "PartnerAddress": "کرج اتوبان قزوین",
+    "CashAccountName": "صندوق تخفیفات ریالی",
+    "Price": "740,000,000",
+    "SettlementDocuments": "خرید 0124",
+    "DocumentDescription": "بابت خرید شیر و ماست",
+    "DocumentId": "31c307a7-e3f3-4dbf-91eb-339d9921e53f"
+
+  },
+  {
+
+    "DocumentCode": "1814",
+    "DocumentDate": "2022/06/13",
+    "PartnerCode": "10001012",
+    "PartnerName": "شرکت فرمند",
+    "PartnerLegalName": "فرمند ",
+    "PartnerTelephones": "",
+    "PartnerAddress": "تهران ستارخان",
+    "CashAccountName": "صندوق اصلی",
+    "Price": "24,900,000",
+    "SettlementDocuments": "خرید 0123",
+    "DocumentDescription": "",
+    "DocumentId": "7382b290-d487-44a4-aeb4-7ab4255e755a"
+
+  },
+  {
+
+    "DocumentCode": "1813",
+    "DocumentDate": "2022/06/13",
+    "PartnerCode": "10001001",
+    "PartnerName": "شرکت آرانوش خاورمیانه",
+    "PartnerLegalName": "شرکت آرانوش خاورمیانه",
+    "PartnerTelephones": "087-09038608011",
+    "PartnerAddress": "تهران صادقیه",
+    "CashAccountName": "صندوق اصلی",
+    "Price": "50,000,000",
+    "SettlementDocuments": "خرید 79",
+    "DocumentDescription": "",
+    "DocumentId": "66792637-d5ca-47f7-a822-2368fce3dc46"
+
+  },
+  {
+
+    "DocumentCode": "1812",
+    "DocumentDate": "2022/06/13",
+    "PartnerCode": "10001001",
+    "PartnerName": "شرکت آرانوش خاورمیانه",
+    "PartnerLegalName": "شرکت آرانوش خاورمیانه",
+    "PartnerTelephones": "087-09038608011",
+    "PartnerAddress": "تهران صادقیه",
+    "CashAccountName": "صندوق اصلی",
+    "Price": "100,000,000",
+    "SettlementDocuments": "خرید 77",
+    "DocumentDescription": "بابت ",
+    "DocumentId": "2cdb9ffe-3a37-42cb-9053-b3f30cd388c8"
+
+  },
+  {
+
+    "DocumentCode": "1811",
+    "DocumentDate": "2022/05/24",
+    "PartnerCode": "10001001",
+    "PartnerName": "شرکت آرانوش خاورمیانه",
+    "PartnerLegalName": "شرکت آرانوش خاورمیانه",
+    "PartnerTelephones": "087-09038608011",
+    "PartnerAddress": "تهران صادقیه",
+    "CashAccountName": "صندوق اصلی",
+    "Price": "10,000,000",
+    "SettlementDocuments": "خرید 69",
+    "DocumentDescription": "یبذبذل",
+    "DocumentId": "7712ef58-bdb1-4142-9abc-21e90987fc92"
+
+  },
+  {
+    "DocumentCode": "1810",
+    "DocumentDate": "2022/04/22",
+    "PartnerCode": "10102013",
+    "PartnerName": "کامران سلحشور",
+    "PartnerLegalName": "فروشگاه گلسار",
+    "PartnerTelephones": "09038608011",
+    "PartnerAddress": "تهران صادقیه",
+    "CashAccountName": "صندوق اصلی",
+    "Price": "100,000,000",
+    "SettlementDocuments": "",
+    "DocumentDescription": "",
+    "DocumentId": "7953b6b5-2891-4bab-804a-c3f6e8097049"
+
+  },
+  {
+
+    "DocumentCode": "1809",
+    "DocumentDate": "2021/10/02",
+    "PartnerCode": "10001001",
+    "PartnerName": "شرکت آرانوش خاورمیانه",
+    "PartnerLegalName": "شرکت آرانوش خاورمیانه",
+    "PartnerTelephones": "087-09038608011",
+    "PartnerAddress": "تهران صادقیه",
+    "CashAccountName": "صندوق تنخواه روژین ویسی",
+    "Price": "200,000,000",
+    "SettlementDocuments": "خرید 69",
+    "DocumentDescription": "پرداخت نقدی ",
+    "DocumentId": "5ab56e43-60b7-4492-8859-a61519b59c7f"
+
+  },
+  {
+
+    "DocumentCode": "1808",
+    "DocumentDate": "2021/10/02",
+    "PartnerCode": "20400006",
+    "PartnerName": "شادی بوجاری",
+    "PartnerLegalName": "",
+    "PartnerTelephones": "",
+    "PartnerAddress": "تهران صادقیه",
+    "CashAccountName": "صندوق اصلی",
+    "Price": "14,985,987",
+    "SettlementDocuments": "",
+    "DocumentDescription": "انتقال بدهی فروشگاه حیدری",
+    "DocumentId": "ac3de44c-8a63-47bf-a228-0036d7a68770"
+
+  },
+  {
+
+    "DocumentCode": "1805",
+    "DocumentDate": "2021/09/30",
+    "PartnerCode": "",
+    "PartnerName": "",
+    "PartnerLegalName": "",
+    "PartnerTelephones": "",
+    "PartnerAddress": "",
+    "CashAccountName": "صندوق تنخواه روژین ویسی",
+    "Price": "1,400,000",
+    "SettlementDocuments": "",
+    "DocumentDescription": "پرداخت نقدی بابت خرج ماشین مهدی رضایی بابت روغن ترمز وتیغه برف پاکن",
+    "DocumentId": "8628c390-e76f-4526-a9cb-fd2e0b499a34"
+
+  }
+
+]

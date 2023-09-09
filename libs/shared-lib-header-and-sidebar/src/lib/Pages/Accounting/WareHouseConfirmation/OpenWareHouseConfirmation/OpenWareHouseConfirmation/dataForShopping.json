@@ -1,0 +1,1843 @@
+[{
+  "OrderId": "",
+  "WarehouseDocumentId": "1c16979a-6d98-41f2-bdcf-6b0361f31e01",
+  "OrderCode": "143",
+  "OrderInsertDate": "1401/09/29",
+  "WarehouseDocumentDate": "1401/09/29",
+  "OrderSettlementDate": "",
+  "PartnerId": "d1f92445-9e98-4c3f-9627-ed9ef26cabeb",
+  "PartnerCode": "10102004",
+  "PartnerName": "صلاح الدین خاکی زاده",
+  "OrderDescription": "fee",
+  "OrderDiscountPercent": 0,
+  "OrderDiscountAmount": 0,
+  "OrderDiscountCalculationFrom": "Percent",
+  "StuffPricesSum": 0,
+  "DiscountAmountsSum": 0,
+  "OrderCount":5,
+  "OrderPriceSum": 0,
+  "AddedFields": [],
+  "SubtractedFields": [],
+  "FreeProducts": [],
+  "StuffFinalPriceFactors": [],
+  "StuffsMeanBuyUnitPrice": [
+    {
+      "StuffId": "e85f7948-249a-43a9-a36a-0035c47b07e9",
+      "MeanPrice": 43676.0
+    },
+    {
+      "StuffId": "57b19bc3-1b04-430e-8a9a-03ac73e101d3",
+      "MeanPrice": 300000.0
+    },
+    {
+      "StuffId": "52ff7a2f-8723-430d-927d-0550096639f8",
+      "MeanPrice": 42902.0
+    },
+    {
+      "StuffId": "79e61ff5-93ae-4e13-9f67-078d57f66fc8",
+      "MeanPrice": 180000.0
+    },
+    {
+      "StuffId": "273fce45-213f-4a16-bf37-082a19d1a87f",
+      "MeanPrice": 81555.989583
+    },
+    {
+      "StuffId": "d6fb69ec-461e-4e39-bc39-0d7011d1afa7",
+      "MeanPrice": 52018.939379
+    },
+    {
+      "StuffId": "895a5b3f-3358-436b-8195-0e70a3687567",
+      "MeanPrice": 67561.0
+    },
+    {
+      "StuffId": "a872f38e-1878-4004-b8c0-0f16e258c087",
+      "MeanPrice": 99972.5
+    },
+    {
+      "StuffId": "bf1fd88b-e1c2-471d-a64a-0f648a21d12b",
+      "MeanPrice": 732375.0
+    },
+    {
+      "StuffId": "eb792e17-9ef0-42b0-9f72-1135080489bb",
+      "MeanPrice": 111666.166666
+    },
+    {
+      "StuffId": "d427404b-137b-4656-a56b-11519af350da",
+      "MeanPrice": 740007.142857
+    },
+    {
+      "StuffId": "5206ea6e-2a21-4bf9-bd28-12bccc268b56",
+      "MeanPrice": 15000.0
+    },
+    {
+      "StuffId": "b4879e97-5e8c-406f-ab3c-1631feb32433",
+      "MeanPrice": 385000.0
+    },
+    {
+      "StuffId": "3c80fd63-c282-4713-b37f-194132f1b94f",
+      "MeanPrice": 56210.0
+    },
+    {
+      "StuffId": "57ca75f9-8e17-41a3-bdcb-197041eca836",
+      "MeanPrice": 2300000.0
+    },
+    {
+      "StuffId": "270b39c9-8fe5-426f-bec6-1a21979365f2",
+      "MeanPrice": 31743.249115
+    },
+    {
+      "StuffId": "625fd432-3fab-418c-b1ba-1ae793705651",
+      "MeanPrice": 42779.033363
+    },
+    {
+      "StuffId": "728aaa01-e623-4197-aa4a-1ca24a96a9c4",
+      "MeanPrice": 176972.0
+    },
+    {
+      "StuffId": "0590dc6f-abd2-4475-a046-1ffad49e7bc1",
+      "MeanPrice": 53199.916666
+    },
+    {
+      "StuffId": "6950f481-0398-419e-820d-2007dc265e40",
+      "MeanPrice": 220000.0
+    },
+    {
+      "StuffId": "d9dafd2d-3542-4f32-ba83-2190ba785ec5",
+      "MeanPrice": 144036.904191
+    },
+    {
+      "StuffId": "f2e56384-308a-450a-8a56-22435e8f6d73",
+      "MeanPrice": 48255.555555
+    },
+    {
+      "StuffId": "4591a6ab-9fa7-482d-b30b-22b8ed665ca4",
+      "MeanPrice": 50227.0
+    },
+    {
+      "StuffId": "2d265d9e-b27a-4a1a-ba5a-267f0c26eee5",
+      "MeanPrice": 30350.338218
+    },
+    {
+      "StuffId": "97c9c35c-ad9f-4710-bc63-27737889f94f",
+      "MeanPrice": 78173.463235
+    },
+    {
+      "StuffId": "99c2fffd-4bba-4748-bacf-2cce4a3809f0",
+      "MeanPrice": 74385.0
+    },
+    {
+      "StuffId": "2c121c2d-07cf-488f-9f09-33d6eb05fbd0",
+      "MeanPrice": 34643.0
+    },
+    {
+      "StuffId": "5f11016f-f25c-445f-b256-34aa0af00061",
+      "MeanPrice": 48256.185185
+    },
+    {
+      "StuffId": "b04eda57-3fdc-40f6-94fd-3591cf5c9533",
+      "MeanPrice": 37500.0
+    },
+    {
+      "StuffId": "692fbd6c-7673-44b6-bb05-397e6d33fc8c",
+      "MeanPrice": 160371.0
+    },
+    {
+      "StuffId": "1cc205a3-264b-4b18-8450-39fed81ccd83",
+      "MeanPrice": 37539.0
+    },
+    {
+      "StuffId": "4f069813-f699-4a10-96b2-3d95c013b835",
+      "MeanPrice": 47850.923076
+    },
+    {
+      "StuffId": "13764eae-10ab-420b-8820-3e828bd6f87f",
+      "MeanPrice": 150063.422535
+    },
+    {
+      "StuffId": "dbea6584-bb1b-46bd-9533-423923d707ea",
+      "MeanPrice": 2615000.0
+    },
+    {
+      "StuffId": "f9899591-69a8-45d4-9c73-42c171b98a4c",
+      "MeanPrice": 37532.964169
+    },
+    {
+      "StuffId": "0237b6f0-fc47-4747-b81d-467cc8f7f5a4",
+      "MeanPrice": 190000.0
+    },
+    {
+      "StuffId": "07d6c7ae-5a49-4095-ae8e-483cc5aec1ce",
+      "MeanPrice": 55341.0
+    },
+    {
+      "StuffId": "7ae414b7-3822-4d94-a937-49b766972e44",
+      "MeanPrice": 50363.0
+    },
+    {
+      "StuffId": "fe7f144a-9aab-407c-aebc-49c8d08fe9ec",
+      "MeanPrice": 42900.0
+    },
+    {
+      "StuffId": "824218c0-853c-4852-ab0c-4c949c53947e",
+      "MeanPrice": 113197.6
+    },
+    {
+      "StuffId": "23a6bd90-dc42-43c0-b9de-4f66e4845dcc",
+      "MeanPrice": 55341.0
+    },
+    {
+      "StuffId": "e75252e2-3a24-43ca-81b4-5189e9bebdd0",
+      "MeanPrice": 79561.683333
+    },
+    {
+      "StuffId": "677e7000-d269-4884-bf94-52552a061ae7",
+      "MeanPrice": 500000.0
+    },
+    {
+      "StuffId": "30d069ec-705c-484c-9f43-55d4d5d77782",
+      "MeanPrice": 99088.666666
+    },
+    {
+      "StuffId": "ae22391b-ddcc-4b20-b16c-5723435276d1",
+      "MeanPrice": 124090.470899
+    },
+    {
+      "StuffId": "02d6ba75-db9e-4b6c-a4c3-59a48d0e356d",
+      "MeanPrice": 80374.642857
+    },
+    {
+      "StuffId": "361017c1-34b1-416d-be5a-5b3e9b4e8837",
+      "MeanPrice": 120000.0
+    },
+    {
+      "StuffId": "425e5022-7645-4dae-bf7d-5cc0f13b02ad",
+      "MeanPrice": 200000.0
+    },
+    {
+      "StuffId": "b982928f-095b-4f9c-a332-5dbf4535f756",
+      "MeanPrice": 49807.0
+    },
+    {
+      "StuffId": "0050b110-764d-4e36-80d5-5fff7bc51d5c",
+      "MeanPrice": 78649.877777
+    },
+    {
+      "StuffId": "0ab38ca3-c2fc-44ff-ae93-60e81700c26c",
+      "MeanPrice": 733385.0
+    },
+    {
+      "StuffId": "0034764b-8af3-467e-a6cb-623900460025",
+      "MeanPrice": 43173.37037
+    },
+    {
+      "StuffId": "12ffd4bf-0548-4471-a128-624ced796362",
+      "MeanPrice": 311433.0
+    },
+    {
+      "StuffId": "edb5ba6e-f8f5-4f24-adf4-65c6c45fecf7",
+      "MeanPrice": 51768.181818
+    },
+    {
+      "StuffId": "59879543-40ef-4422-9f52-65e62377bd15",
+      "MeanPrice": 16300.0
+    },
+    {
+      "StuffId": "ef67da23-3b23-46dc-a012-664a7b6c002f",
+      "MeanPrice": 50227.0
+    },
+    {
+      "StuffId": "33464a41-07a1-45c3-bce9-671cdc135d40",
+      "MeanPrice": 48256.220657
+    },
+    {
+      "StuffId": "c772242b-34de-4e2b-80e4-673568d11c80",
+      "MeanPrice": 10000.0
+    },
+    {
+      "StuffId": "d3c652e1-36ef-4ea4-b1cc-67a47ca151cc",
+      "MeanPrice": 14500.0
+    },
+    {
+      "StuffId": "0b628f0f-c924-4e9c-819a-67ee04644095",
+      "MeanPrice": 43459.516819
+    },
+    {
+      "StuffId": "db47ef35-51cb-416a-9888-68a988cab407",
+      "MeanPrice": 25715.052631
+    },
+    {
+      "StuffId": "b9b4deac-7747-4ff8-8be2-6a34235659fe",
+      "MeanPrice": 311433.0
+    },
+    {
+      "StuffId": "1f05daaa-b960-4fa5-9020-6b767f450f37",
+      "MeanPrice": 49807.0
+    },
+    {
+      "StuffId": "15f495ed-8cd1-43c0-88d6-6c0904bfd53c",
+      "MeanPrice": 50049.834482
+    },
+    {
+      "StuffId": "26a344c1-1f0c-439f-8cc0-6c0e60ff29eb",
+      "MeanPrice": 32368.684343
+    },
+    {
+      "StuffId": "7ee0a051-d495-46de-9652-6d54806556c5",
+      "MeanPrice": 272727.272727
+    },
+    {
+      "StuffId": "6fce3f93-b48b-422a-a05d-6f91480e56e6",
+      "MeanPrice": 39433.0
+    },
+    {
+      "StuffId": "ee231fdf-d026-4fdb-beb9-77e93edf9e36",
+      "MeanPrice": 58373.82412
+    },
+    {
+      "StuffId": "60d44187-090c-481d-8a90-7b1966b4df1f",
+      "MeanPrice": 78805.19525
+    },
+    {
+      "StuffId": "1e61f2e5-3d4f-49e1-9690-7be6663529d8",
+      "MeanPrice": 19850.0
+    },
+    {
+      "StuffId": "160929a3-5c97-4f5e-82e8-7f2c7a90dbff",
+      "MeanPrice": 311434.0
+    },
+    {
+      "StuffId": "fe9cf02e-eeea-4771-95fa-7f48147b37a6",
+      "MeanPrice": 66410.0
+    },
+    {
+      "StuffId": "38702ac0-94e0-46f9-95a5-811ab708771d",
+      "MeanPrice": 47793.5
+    },
+    {
+      "StuffId": "3850450f-dbab-44ca-83e5-81a060f5a416",
+      "MeanPrice": 150390.0
+    },
+    {
+      "StuffId": "32662dde-9d87-4e7a-b9ea-835407a5dd9a",
+      "MeanPrice": 203785.0
+    },
+    {
+      "StuffId": "e79a6594-cd6b-47cf-ad7e-86953b5648b0",
+      "MeanPrice": 400000.0
+    },
+    {
+      "StuffId": "a460bdf1-66f4-4419-8993-86acad97399f",
+      "MeanPrice": 75254.064366
+    },
+    {
+      "StuffId": "ec2ecd94-61e3-4fce-bd16-88d46a74aa5d",
+      "MeanPrice": 44727.0
+    },
+    {
+      "StuffId": "81968c1f-bdbb-41be-bfba-8961c4c2b257",
+      "MeanPrice": 116000.0
+    },
+    {
+      "StuffId": "2409734b-3a09-4328-94d3-8ca3f7ab4245",
+      "MeanPrice": 125189.021428
+    },
+    {
+      "StuffId": "a7e65395-cdbf-43bc-9319-8fdfe703b2fc",
+      "MeanPrice": 50050.0
+    },
+    {
+      "StuffId": "be8b6d09-9c38-4f37-baeb-910ba0d911f4",
+      "MeanPrice": 5493729.0
+    },
+    {
+      "StuffId": "f62dd31b-c114-46a2-9011-927c01dc560e",
+      "MeanPrice": 182793.714285
+    },
+    {
+      "StuffId": "f0a2317d-eefe-4314-9596-934e7e74a3cd",
+      "MeanPrice": 37500.0
+    },
+    {
+      "StuffId": "39758b49-34c2-4277-84aa-968df4f18c72",
+      "MeanPrice": 53723.294444
+    },
+    {
+      "StuffId": "ad1a4fb5-f6cd-4cb4-a0be-9705f2e175d7",
+      "MeanPrice": 67561.0
+    },
+    {
+      "StuffId": "dd25e06c-b857-4ff7-ada0-973829a56eac",
+      "MeanPrice": 41700.0
+    },
+    {
+      "StuffId": "171a478f-12c9-4f7b-b6e9-97cf2ed7f82e",
+      "MeanPrice": 48812.111111
+    },
+    {
+      "StuffId": "1777f1a3-2a56-463b-b50d-984f8259b7b8",
+      "MeanPrice": 613528.0
+    },
+    {
+      "StuffId": "2e3d1762-dc91-409e-ae1a-9be4ecc6b580",
+      "MeanPrice": 67561.0
+    },
+    {
+      "StuffId": "b764ce0e-f019-481e-9c29-9d194596cb36",
+      "MeanPrice": 350000.0
+    },
+    {
+      "StuffId": "e3c42f7b-b504-4b74-9960-9e7072e76145",
+      "MeanPrice": 12000.0
+    },
+    {
+      "StuffId": "9474dc5f-dc0b-470a-8a88-9e863f55777c",
+      "MeanPrice": 67561.0
+    },
+    {
+      "StuffId": "26106d7c-066f-4296-9bad-9ec037aa10f6",
+      "MeanPrice": 733385.0
+    },
+    {
+      "StuffId": "5af28fec-a8ee-43f3-9fc9-a047a336afd5",
+      "MeanPrice": 58689.812588
+    },
+    {
+      "StuffId": "482aca43-d7f6-43f5-93cf-a25a0617755f",
+      "MeanPrice": 55565.0
+    },
+    {
+      "StuffId": "e8c070b7-1b0a-4684-941b-a27afc2827b1",
+      "MeanPrice": 190000.0
+    },
+    {
+      "StuffId": "61443912-c6c6-45ca-9b08-a2eabeeb859b",
+      "MeanPrice": 245675.0
+    },
+    {
+      "StuffId": "8c230e26-99fc-401f-a08d-a6ab5e39a1c9",
+      "MeanPrice": 47492.246376
+    },
+    {
+      "StuffId": "8bf8ad00-b6b3-45c4-b5b1-a876097a688f",
+      "MeanPrice": 67561.0
+    },
+    {
+      "StuffId": "a567a448-4a08-496b-aa15-ab4cbad7519d",
+      "MeanPrice": 60876.0
+    },
+    {
+      "StuffId": "d6c15cc9-97b9-4248-a310-ae27b1bb93fa",
+      "MeanPrice": 83239.269841
+    },
+    {
+      "StuffId": "9b9eceb7-f957-498a-bff7-afc450ccd91b",
+      "MeanPrice": 37500.0
+    },
+    {
+      "StuffId": "131453ec-f94c-4884-8201-b0faf4170bb3",
+      "MeanPrice": 385000.0
+    },
+    {
+      "StuffId": "f0f51fca-9b08-4e0f-b12e-b1234916861b",
+      "MeanPrice": 36451.15503
+    },
+    {
+      "StuffId": "3d7e2da7-2cf5-4d7e-920d-b3838f3829b0",
+      "MeanPrice": 90000.0
+    },
+    {
+      "StuffId": "1aa32524-4104-45ce-a466-b71d38b4f6cf",
+      "MeanPrice": 43258.748091
+    },
+    {
+      "StuffId": "e99aa16e-ad07-4a0e-8152-b8354388c0ff",
+      "MeanPrice": 52574.0
+    },
+    {
+      "StuffId": "b4a7f16e-cc04-4862-af72-b85c9c33ab93",
+      "MeanPrice": 50000.0
+    },
+    {
+      "StuffId": "acb0c2f8-beae-4abd-9da5-b891e4d94746",
+      "MeanPrice": 1000000.0
+    },
+    {
+      "StuffId": "140c1fd7-439a-4292-a55e-c1786fbd6e04",
+      "MeanPrice": 2730441.086956
+    },
+    {
+      "StuffId": "793524a1-a9af-4833-9818-c24eda607e35",
+      "MeanPrice": 31642.500363
+    },
+    {
+      "StuffId": "869f5f3a-8487-4e8c-bdf6-c26b45c13c75",
+      "MeanPrice": 93068.989444
+    },
+    {
+      "StuffId": "3cd80b80-eedd-4dde-87be-c6fb7c319e0f",
+      "MeanPrice": 203785.0
+    },
+    {
+      "StuffId": "33ed74ec-814f-4bad-8282-c847716b3c54",
+      "MeanPrice": 32297.101265
+    },
+    {
+      "StuffId": "42363994-8094-47aa-a635-cbcc8f9e3f98",
+      "MeanPrice": 50227.0
+    },
+    {
+      "StuffId": "c380ae9c-eb59-4572-8450-cda206da057d",
+      "MeanPrice": 5899504.4
+    },
+    {
+      "StuffId": "90384201-5945-486c-802b-cf1033fadf8a",
+      "MeanPrice": 78763.6
+    },
+    {
+      "StuffId": "c312d1ac-e8f3-44b5-8e1b-d0628719c30b",
+      "MeanPrice": 49807.0
+    },
+    {
+      "StuffId": "ea8389fc-9b40-4e82-8fed-d1c6319db94c",
+      "MeanPrice": 32176.46875
+    },
+    {
+      "StuffId": "e1bad1b5-6792-4716-a71a-d1d575d88682",
+      "MeanPrice": 50050.0
+    },
+    {
+      "StuffId": "db53c799-8079-4fda-aa85-d1f1d120128a",
+      "MeanPrice": 52106.642857
+    },
+    {
+      "StuffId": "50c5422e-0c03-46b5-bc9d-d2d5ec3d61e6",
+      "MeanPrice": 1000000.0
+    },
+    {
+      "StuffId": "f644ac3f-f907-4722-955f-d3b3183e5534",
+      "MeanPrice": 50049.835616
+    },
+    {
+      "StuffId": "f9ede293-4c52-4a06-9ea1-d3cc94cf5144",
+      "MeanPrice": 50227.0
+    },
+    {
+      "StuffId": "a15a736c-4b6a-420c-96c2-d7905e5718b8",
+      "MeanPrice": 31846.09982
+    },
+    {
+      "StuffId": "40a488a4-3991-4233-bc88-d7aad6173399",
+      "MeanPrice": 51490.0
+    },
+    {
+      "StuffId": "4e1f901b-4302-4fef-9199-d9a9e5af2cdd",
+      "MeanPrice": 74385.0
+    },
+    {
+      "StuffId": "b2e87d56-6f29-4ebe-a408-db224f5dfc66",
+      "MeanPrice": 59139.666666
+    },
+    {
+      "StuffId": "07334ef8-8032-4d61-8c35-db540abc0873",
+      "MeanPrice": 450507.0
+    },
+    {
+      "StuffId": "929f509c-1044-44f1-823f-db7afa9cd653",
+      "MeanPrice": 36451.5
+    },
+    {
+      "StuffId": "64370674-7f26-4a27-bd05-dbed670a816e",
+      "MeanPrice": 128410.463414
+    },
+    {
+      "StuffId": "9f202a50-def0-46d1-b284-dc2ed1919718",
+      "MeanPrice": 17253.086419
+    },
+    {
+      "StuffId": "7c41bf41-73ba-4a91-881f-dc529d52f034",
+      "MeanPrice": 50227.0
+    },
+    {
+      "StuffId": "6fa83807-7683-404c-9428-dd9e869c06ff",
+      "MeanPrice": 14500.0
+    },
+    {
+      "StuffId": "55243160-d483-47b2-916b-ddd3154b5707",
+      "MeanPrice": 52183.772727
+    },
+    {
+      "StuffId": "fda06509-59a5-4988-9fba-deb17b78e34b",
+      "MeanPrice": 732375.0
+    },
+    {
+      "StuffId": "137006ad-8a80-4de4-bc9c-e10735db1d57",
+      "MeanPrice": 53630.287564
+    },
+    {
+      "StuffId": "3aac0d0a-dc8a-46a6-8260-e4dc17e76596",
+      "MeanPrice": 299150.0
+    },
+    {
+      "StuffId": "3b2acb56-2e4f-4909-b5b8-e7c08f20882f",
+      "MeanPrice": 150000.0
+    },
+    {
+      "StuffId": "8cf34f87-cb7c-4c1f-af93-e908f2099b63",
+      "MeanPrice": 350000.0
+    },
+    {
+      "StuffId": "ba0dc0de-1c0e-4610-a347-eafa5249b581",
+      "MeanPrice": 42096.0
+    },
+    {
+      "StuffId": "b14728c4-400a-458b-8c6e-ecf918ac3eb8",
+      "MeanPrice": 756275.0
+    },
+    {
+      "StuffId": "e5c1a3e1-8852-41c3-a920-edaf7dd5208b",
+      "MeanPrice": 744812.5
+    },
+    {
+      "StuffId": "7794b5a1-ae77-4ad5-8b69-ee538877abc8",
+      "MeanPrice": 298956.0
+    },
+    {
+      "StuffId": "088f8f5a-e509-4aeb-919d-ef7bb33df48e",
+      "MeanPrice": 43271.428571
+    },
+    {
+      "StuffId": "5aca5442-1431-4499-af1d-f1407fb6907c",
+      "MeanPrice": 12916.2
+    },
+    {
+      "StuffId": "91fbc669-4889-446d-9203-f150031bcea9",
+      "MeanPrice": 51764.05291
+    },
+    {
+      "StuffId": "34aa46c6-bf18-4678-85e1-f20bf45e8f32",
+      "MeanPrice": 52116.779472
+    },
+    {
+      "StuffId": "c5a095ce-6405-44cf-8747-fc14a6ceadab",
+      "MeanPrice": 36451.5
+    },
+    {
+      "StuffId": "04201898-9a2e-46a9-a495-fe14c48e4e9c",
+      "MeanPrice": 185566.666666
+    }
+  ],
+  "StuffsLastBuyDiscountPercent": [
+    {
+      "StuffId": "e85f7948-249a-43a9-a36a-0035c47b07e9",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "57b19bc3-1b04-430e-8a9a-03ac73e101d3",
+      "DiscountPercent": 5.0
+    },
+    {
+      "StuffId": "52ff7a2f-8723-430d-927d-0550096639f8",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "79e61ff5-93ae-4e13-9f67-078d57f66fc8",
+      "DiscountPercent": 5.0
+    },
+    {
+      "StuffId": "273fce45-213f-4a16-bf37-082a19d1a87f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "d6fb69ec-461e-4e39-bc39-0d7011d1afa7",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "895a5b3f-3358-436b-8195-0e70a3687567",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "a872f38e-1878-4004-b8c0-0f16e258c087",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "bf1fd88b-e1c2-471d-a64a-0f648a21d12b",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "eb792e17-9ef0-42b0-9f72-1135080489bb",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "d427404b-137b-4656-a56b-11519af350da",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "5206ea6e-2a21-4bf9-bd28-12bccc268b56",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "b4879e97-5e8c-406f-ab3c-1631feb32433",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "3c80fd63-c282-4713-b37f-194132f1b94f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "57ca75f9-8e17-41a3-bdcb-197041eca836",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "270b39c9-8fe5-426f-bec6-1a21979365f2",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "625fd432-3fab-418c-b1ba-1ae793705651",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "728aaa01-e623-4197-aa4a-1ca24a96a9c4",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "0590dc6f-abd2-4475-a046-1ffad49e7bc1",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "6950f481-0398-419e-820d-2007dc265e40",
+      "DiscountPercent": 2.0
+    },
+    {
+      "StuffId": "d9dafd2d-3542-4f32-ba83-2190ba785ec5",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "f2e56384-308a-450a-8a56-22435e8f6d73",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "4591a6ab-9fa7-482d-b30b-22b8ed665ca4",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "2d265d9e-b27a-4a1a-ba5a-267f0c26eee5",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "97c9c35c-ad9f-4710-bc63-27737889f94f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "99c2fffd-4bba-4748-bacf-2cce4a3809f0",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "2c121c2d-07cf-488f-9f09-33d6eb05fbd0",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "5f11016f-f25c-445f-b256-34aa0af00061",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "b04eda57-3fdc-40f6-94fd-3591cf5c9533",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "692fbd6c-7673-44b6-bb05-397e6d33fc8c",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "1cc205a3-264b-4b18-8450-39fed81ccd83",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "4f069813-f699-4a10-96b2-3d95c013b835",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "13764eae-10ab-420b-8820-3e828bd6f87f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "dbea6584-bb1b-46bd-9533-423923d707ea",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "f9899591-69a8-45d4-9c73-42c171b98a4c",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "0237b6f0-fc47-4747-b81d-467cc8f7f5a4",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "07d6c7ae-5a49-4095-ae8e-483cc5aec1ce",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "7ae414b7-3822-4d94-a937-49b766972e44",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "fe7f144a-9aab-407c-aebc-49c8d08fe9ec",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "824218c0-853c-4852-ab0c-4c949c53947e",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "23a6bd90-dc42-43c0-b9de-4f66e4845dcc",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "e75252e2-3a24-43ca-81b4-5189e9bebdd0",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "677e7000-d269-4884-bf94-52552a061ae7",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "30d069ec-705c-484c-9f43-55d4d5d77782",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "ae22391b-ddcc-4b20-b16c-5723435276d1",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "02d6ba75-db9e-4b6c-a4c3-59a48d0e356d",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "361017c1-34b1-416d-be5a-5b3e9b4e8837",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "425e5022-7645-4dae-bf7d-5cc0f13b02ad",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "b982928f-095b-4f9c-a332-5dbf4535f756",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "0050b110-764d-4e36-80d5-5fff7bc51d5c",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "0ab38ca3-c2fc-44ff-ae93-60e81700c26c",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "0034764b-8af3-467e-a6cb-623900460025",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "12ffd4bf-0548-4471-a128-624ced796362",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "edb5ba6e-f8f5-4f24-adf4-65c6c45fecf7",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "59879543-40ef-4422-9f52-65e62377bd15",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "ef67da23-3b23-46dc-a012-664a7b6c002f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "33464a41-07a1-45c3-bce9-671cdc135d40",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "c772242b-34de-4e2b-80e4-673568d11c80",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "d3c652e1-36ef-4ea4-b1cc-67a47ca151cc",
+      "DiscountPercent": 22.0
+    },
+    {
+      "StuffId": "0b628f0f-c924-4e9c-819a-67ee04644095",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "db47ef35-51cb-416a-9888-68a988cab407",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "b9b4deac-7747-4ff8-8be2-6a34235659fe",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "1f05daaa-b960-4fa5-9020-6b767f450f37",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "15f495ed-8cd1-43c0-88d6-6c0904bfd53c",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "26a344c1-1f0c-439f-8cc0-6c0e60ff29eb",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "7ee0a051-d495-46de-9652-6d54806556c5",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "6fce3f93-b48b-422a-a05d-6f91480e56e6",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "ee231fdf-d026-4fdb-beb9-77e93edf9e36",
+      "DiscountPercent": 25.219994724347138
+    },
+    {
+      "StuffId": "60d44187-090c-481d-8a90-7b1966b4df1f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "1e61f2e5-3d4f-49e1-9690-7be6663529d8",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "160929a3-5c97-4f5e-82e8-7f2c7a90dbff",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "fe9cf02e-eeea-4771-95fa-7f48147b37a6",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "38702ac0-94e0-46f9-95a5-811ab708771d",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "3850450f-dbab-44ca-83e5-81a060f5a416",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "32662dde-9d87-4e7a-b9ea-835407a5dd9a",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "e79a6594-cd6b-47cf-ad7e-86953b5648b0",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "a460bdf1-66f4-4419-8993-86acad97399f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "ec2ecd94-61e3-4fce-bd16-88d46a74aa5d",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "81968c1f-bdbb-41be-bfba-8961c4c2b257",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "2409734b-3a09-4328-94d3-8ca3f7ab4245",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "a7e65395-cdbf-43bc-9319-8fdfe703b2fc",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "be8b6d09-9c38-4f37-baeb-910ba0d911f4",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "f62dd31b-c114-46a2-9011-927c01dc560e",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "f0a2317d-eefe-4314-9596-934e7e74a3cd",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "39758b49-34c2-4277-84aa-968df4f18c72",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "ad1a4fb5-f6cd-4cb4-a0be-9705f2e175d7",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "dd25e06c-b857-4ff7-ada0-973829a56eac",
+      "DiscountPercent": 26.419999714514103
+    },
+    {
+      "StuffId": "171a478f-12c9-4f7b-b6e9-97cf2ed7f82e",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "1777f1a3-2a56-463b-b50d-984f8259b7b8",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "2e3d1762-dc91-409e-ae1a-9be4ecc6b580",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "b764ce0e-f019-481e-9c29-9d194596cb36",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "e3c42f7b-b504-4b74-9960-9e7072e76145",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "9474dc5f-dc0b-470a-8a88-9e863f55777c",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "26106d7c-066f-4296-9bad-9ec037aa10f6",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "5af28fec-a8ee-43f3-9fc9-a047a336afd5",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "482aca43-d7f6-43f5-93cf-a25a0617755f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "e8c070b7-1b0a-4684-941b-a27afc2827b1",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "61443912-c6c6-45ca-9b08-a2eabeeb859b",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "8c230e26-99fc-401f-a08d-a6ab5e39a1c9",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "8bf8ad00-b6b3-45c4-b5b1-a876097a688f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "a567a448-4a08-496b-aa15-ab4cbad7519d",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "d6c15cc9-97b9-4248-a310-ae27b1bb93fa",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "9b9eceb7-f957-498a-bff7-afc450ccd91b",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "131453ec-f94c-4884-8201-b0faf4170bb3",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "f0f51fca-9b08-4e0f-b12e-b1234916861b",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "3d7e2da7-2cf5-4d7e-920d-b3838f3829b0",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "1aa32524-4104-45ce-a466-b71d38b4f6cf",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "e99aa16e-ad07-4a0e-8152-b8354388c0ff",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "b4a7f16e-cc04-4862-af72-b85c9c33ab93",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "acb0c2f8-beae-4abd-9da5-b891e4d94746",
+      "DiscountPercent": 5.0
+    },
+    {
+      "StuffId": "140c1fd7-439a-4292-a55e-c1786fbd6e04",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "793524a1-a9af-4833-9818-c24eda607e35",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "869f5f3a-8487-4e8c-bdf6-c26b45c13c75",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "3cd80b80-eedd-4dde-87be-c6fb7c319e0f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "33ed74ec-814f-4bad-8282-c847716b3c54",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "42363994-8094-47aa-a635-cbcc8f9e3f98",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "c380ae9c-eb59-4572-8450-cda206da057d",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "90384201-5945-486c-802b-cf1033fadf8a",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "c312d1ac-e8f3-44b5-8e1b-d0628719c30b",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "ea8389fc-9b40-4e82-8fed-d1c6319db94c",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "e1bad1b5-6792-4716-a71a-d1d575d88682",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "db53c799-8079-4fda-aa85-d1f1d120128a",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "50c5422e-0c03-46b5-bc9d-d2d5ec3d61e6",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "f644ac3f-f907-4722-955f-d3b3183e5534",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "f9ede293-4c52-4a06-9ea1-d3cc94cf5144",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "a15a736c-4b6a-420c-96c2-d7905e5718b8",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "40a488a4-3991-4233-bc88-d7aad6173399",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "4e1f901b-4302-4fef-9199-d9a9e5af2cdd",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "b2e87d56-6f29-4ebe-a408-db224f5dfc66",
+      "DiscountPercent": 30.220000266445603
+    },
+    {
+      "StuffId": "07334ef8-8032-4d61-8c35-db540abc0873",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "929f509c-1044-44f1-823f-db7afa9cd653",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "64370674-7f26-4a27-bd05-dbed670a816e",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "9f202a50-def0-46d1-b284-dc2ed1919718",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "7c41bf41-73ba-4a91-881f-dc529d52f034",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "6fa83807-7683-404c-9428-dd9e869c06ff",
+      "DiscountPercent": 2.0
+    },
+    {
+      "StuffId": "55243160-d483-47b2-916b-ddd3154b5707",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "fda06509-59a5-4988-9fba-deb17b78e34b",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "137006ad-8a80-4de4-bc9c-e10735db1d57",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "3aac0d0a-dc8a-46a6-8260-e4dc17e76596",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "3b2acb56-2e4f-4909-b5b8-e7c08f20882f",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "8cf34f87-cb7c-4c1f-af93-e908f2099b63",
+      "DiscountPercent": 3.0
+    },
+    {
+      "StuffId": "ba0dc0de-1c0e-4610-a347-eafa5249b581",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "b14728c4-400a-458b-8c6e-ecf918ac3eb8",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "e5c1a3e1-8852-41c3-a920-edaf7dd5208b",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "7794b5a1-ae77-4ad5-8b69-ee538877abc8",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "088f8f5a-e509-4aeb-919d-ef7bb33df48e",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "5aca5442-1431-4499-af1d-f1407fb6907c",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "91fbc669-4889-446d-9203-f150031bcea9",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "34aa46c6-bf18-4678-85e1-f20bf45e8f32",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "c5a095ce-6405-44cf-8747-fc14a6ceadab",
+      "DiscountPercent": 0.0
+    },
+    {
+      "StuffId": "04201898-9a2e-46a9-a495-fe14c48e4e9c",
+      "DiscountPercent": 2.0
+    }
+  ],
+  "StuffsLastBuyUnitPrice": [
+    {
+      "StuffId": "e85f7948-249a-43a9-a36a-0035c47b07e9",
+      "UnitPrice": 43676.0
+    },
+    {
+      "StuffId": "57b19bc3-1b04-430e-8a9a-03ac73e101d3",
+      "UnitPrice": 300000.0
+    },
+    {
+      "StuffId": "52ff7a2f-8723-430d-927d-0550096639f8",
+      "UnitPrice": 42902.0
+    },
+    {
+      "StuffId": "79e61ff5-93ae-4e13-9f67-078d57f66fc8",
+      "UnitPrice": 180000.0
+    },
+    {
+      "StuffId": "273fce45-213f-4a16-bf37-082a19d1a87f",
+      "UnitPrice": 7500.0
+    },
+    {
+      "StuffId": "d6fb69ec-461e-4e39-bc39-0d7011d1afa7",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "895a5b3f-3358-436b-8195-0e70a3687567",
+      "UnitPrice": 67561.0
+    },
+    {
+      "StuffId": "a872f38e-1878-4004-b8c0-0f16e258c087",
+      "UnitPrice": 96900.0
+    },
+    {
+      "StuffId": "bf1fd88b-e1c2-471d-a64a-0f648a21d12b",
+      "UnitPrice": 732375.0
+    },
+    {
+      "StuffId": "eb792e17-9ef0-42b0-9f72-1135080489bb",
+      "UnitPrice": 109550.0
+    },
+    {
+      "StuffId": "d427404b-137b-4656-a56b-11519af350da",
+      "UnitPrice": 733500.0
+    },
+    {
+      "StuffId": "5206ea6e-2a21-4bf9-bd28-12bccc268b56",
+      "UnitPrice": 15000.0
+    },
+    {
+      "StuffId": "b4879e97-5e8c-406f-ab3c-1631feb32433",
+      "UnitPrice": 385000.0
+    },
+    {
+      "StuffId": "3c80fd63-c282-4713-b37f-194132f1b94f",
+      "UnitPrice": 56210.0
+    },
+    {
+      "StuffId": "57ca75f9-8e17-41a3-bdcb-197041eca836",
+      "UnitPrice": 2300000.0
+    },
+    {
+      "StuffId": "270b39c9-8fe5-426f-bec6-1a21979365f2",
+      "UnitPrice": 30999.0
+    },
+    {
+      "StuffId": "625fd432-3fab-418c-b1ba-1ae793705651",
+      "UnitPrice": 41332.0
+    },
+    {
+      "StuffId": "728aaa01-e623-4197-aa4a-1ca24a96a9c4",
+      "UnitPrice": 176972.0
+    },
+    {
+      "StuffId": "0590dc6f-abd2-4475-a046-1ffad49e7bc1",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "6950f481-0398-419e-820d-2007dc265e40",
+      "UnitPrice": 220000.0
+    },
+    {
+      "StuffId": "d9dafd2d-3542-4f32-ba83-2190ba785ec5",
+      "UnitPrice": 142109.0
+    },
+    {
+      "StuffId": "f2e56384-308a-450a-8a56-22435e8f6d73",
+      "UnitPrice": 48265.0
+    },
+    {
+      "StuffId": "4591a6ab-9fa7-482d-b30b-22b8ed665ca4",
+      "UnitPrice": 50227.0
+    },
+    {
+      "StuffId": "2d265d9e-b27a-4a1a-ba5a-267f0c26eee5",
+      "UnitPrice": 28058.0
+    },
+    {
+      "StuffId": "97c9c35c-ad9f-4710-bc63-27737889f94f",
+      "UnitPrice": 78417.0
+    },
+    {
+      "StuffId": "99c2fffd-4bba-4748-bacf-2cce4a3809f0",
+      "UnitPrice": 74385.0
+    },
+    {
+      "StuffId": "2c121c2d-07cf-488f-9f09-33d6eb05fbd0",
+      "UnitPrice": 34643.0
+    },
+    {
+      "StuffId": "5f11016f-f25c-445f-b256-34aa0af00061",
+      "UnitPrice": 48265.0
+    },
+    {
+      "StuffId": "b04eda57-3fdc-40f6-94fd-3591cf5c9533",
+      "UnitPrice": 37500.0
+    },
+    {
+      "StuffId": "692fbd6c-7673-44b6-bb05-397e6d33fc8c",
+      "UnitPrice": 160371.0
+    },
+    {
+      "StuffId": "1cc205a3-264b-4b18-8450-39fed81ccd83",
+      "UnitPrice": 37539.0
+    },
+    {
+      "StuffId": "4f069813-f699-4a10-96b2-3d95c013b835",
+      "UnitPrice": 48265.0
+    },
+    {
+      "StuffId": "13764eae-10ab-420b-8820-3e828bd6f87f",
+      "UnitPrice": 150158.0
+    },
+    {
+      "StuffId": "dbea6584-bb1b-46bd-9533-423923d707ea",
+      "UnitPrice": 2615000.0
+    },
+    {
+      "StuffId": "f9899591-69a8-45d4-9c73-42c171b98a4c",
+      "UnitPrice": 37540.0
+    },
+    {
+      "StuffId": "0237b6f0-fc47-4747-b81d-467cc8f7f5a4",
+      "UnitPrice": 190000.0
+    },
+    {
+      "StuffId": "07d6c7ae-5a49-4095-ae8e-483cc5aec1ce",
+      "UnitPrice": 55341.0
+    },
+    {
+      "StuffId": "7ae414b7-3822-4d94-a937-49b766972e44",
+      "UnitPrice": 48134.0
+    },
+    {
+      "StuffId": "fe7f144a-9aab-407c-aebc-49c8d08fe9ec",
+      "UnitPrice": 42900.0
+    },
+    {
+      "StuffId": "824218c0-853c-4852-ab0c-4c949c53947e",
+      "UnitPrice": 109550.0
+    },
+    {
+      "StuffId": "23a6bd90-dc42-43c0-b9de-4f66e4845dcc",
+      "UnitPrice": 55341.0
+    },
+    {
+      "StuffId": "e75252e2-3a24-43ca-81b4-5189e9bebdd0",
+      "UnitPrice": 78417.0
+    },
+    {
+      "StuffId": "677e7000-d269-4884-bf94-52552a061ae7",
+      "UnitPrice": 500000.0
+    },
+    {
+      "StuffId": "30d069ec-705c-484c-9f43-55d4d5d77782",
+      "UnitPrice": 96900.0
+    },
+    {
+      "StuffId": "ae22391b-ddcc-4b20-b16c-5723435276d1",
+      "UnitPrice": 129000.0
+    },
+    {
+      "StuffId": "02d6ba75-db9e-4b6c-a4c3-59a48d0e356d",
+      "UnitPrice": 78417.0
+    },
+    {
+      "StuffId": "361017c1-34b1-416d-be5a-5b3e9b4e8837",
+      "UnitPrice": 120000.0
+    },
+    {
+      "StuffId": "425e5022-7645-4dae-bf7d-5cc0f13b02ad",
+      "UnitPrice": 200000.0
+    },
+    {
+      "StuffId": "b982928f-095b-4f9c-a332-5dbf4535f756",
+      "UnitPrice": 49807.0
+    },
+    {
+      "StuffId": "0050b110-764d-4e36-80d5-5fff7bc51d5c",
+      "UnitPrice": 78417.0
+    },
+    {
+      "StuffId": "0ab38ca3-c2fc-44ff-ae93-60e81700c26c",
+      "UnitPrice": 733385.0
+    },
+    {
+      "StuffId": "0034764b-8af3-467e-a6cb-623900460025",
+      "UnitPrice": 42902.0
+    },
+    {
+      "StuffId": "12ffd4bf-0548-4471-a128-624ced796362",
+      "UnitPrice": 311433.0
+    },
+    {
+      "StuffId": "edb5ba6e-f8f5-4f24-adf4-65c6c45fecf7",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "59879543-40ef-4422-9f52-65e62377bd15",
+      "UnitPrice": 16300.0
+    },
+    {
+      "StuffId": "ef67da23-3b23-46dc-a012-664a7b6c002f",
+      "UnitPrice": 50227.0
+    },
+    {
+      "StuffId": "33464a41-07a1-45c3-bce9-671cdc135d40",
+      "UnitPrice": 48265.0
+    },
+    {
+      "StuffId": "c772242b-34de-4e2b-80e4-673568d11c80",
+      "UnitPrice": 10000.0
+    },
+    {
+      "StuffId": "d3c652e1-36ef-4ea4-b1cc-67a47ca151cc",
+      "UnitPrice": 14500.0
+    },
+    {
+      "StuffId": "0b628f0f-c924-4e9c-819a-67ee04644095",
+      "UnitPrice": 48264.0
+    },
+    {
+      "StuffId": "db47ef35-51cb-416a-9888-68a988cab407",
+      "UnitPrice": 26166.0
+    },
+    {
+      "StuffId": "b9b4deac-7747-4ff8-8be2-6a34235659fe",
+      "UnitPrice": 311433.0
+    },
+    {
+      "StuffId": "1f05daaa-b960-4fa5-9020-6b767f450f37",
+      "UnitPrice": 49807.0
+    },
+    {
+      "StuffId": "15f495ed-8cd1-43c0-88d6-6c0904bfd53c",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "26a344c1-1f0c-439f-8cc0-6c0e60ff29eb",
+      "UnitPrice": 32176.46875
+    },
+    {
+      "StuffId": "7ee0a051-d495-46de-9652-6d54806556c5",
+      "UnitPrice": 2000000.0
+    },
+    {
+      "StuffId": "6fce3f93-b48b-422a-a05d-6f91480e56e6",
+      "UnitPrice": 39433.0
+    },
+    {
+      "StuffId": "ee231fdf-d026-4fdb-beb9-77e93edf9e36",
+      "UnitPrice": 56865.0
+    },
+    {
+      "StuffId": "60d44187-090c-481d-8a90-7b1966b4df1f",
+      "UnitPrice": 78417.0
+    },
+    {
+      "StuffId": "1e61f2e5-3d4f-49e1-9690-7be6663529d8",
+      "UnitPrice": 19850.0
+    },
+    {
+      "StuffId": "160929a3-5c97-4f5e-82e8-7f2c7a90dbff",
+      "UnitPrice": 311434.0
+    },
+    {
+      "StuffId": "fe9cf02e-eeea-4771-95fa-7f48147b37a6",
+      "UnitPrice": 66410.0
+    },
+    {
+      "StuffId": "38702ac0-94e0-46f9-95a5-811ab708771d",
+      "UnitPrice": 52730.0
+    },
+    {
+      "StuffId": "3850450f-dbab-44ca-83e5-81a060f5a416",
+      "UnitPrice": 150158.0
+    },
+    {
+      "StuffId": "32662dde-9d87-4e7a-b9ea-835407a5dd9a",
+      "UnitPrice": 203785.0
+    },
+    {
+      "StuffId": "e79a6594-cd6b-47cf-ad7e-86953b5648b0",
+      "UnitPrice": 400000.0
+    },
+    {
+      "StuffId": "a460bdf1-66f4-4419-8993-86acad97399f",
+      "UnitPrice": 78417.0
+    },
+    {
+      "StuffId": "ec2ecd94-61e3-4fce-bd16-88d46a74aa5d",
+      "UnitPrice": 44727.0
+    },
+    {
+      "StuffId": "81968c1f-bdbb-41be-bfba-8961c4c2b257",
+      "UnitPrice": 120000.0
+    },
+    {
+      "StuffId": "2409734b-3a09-4328-94d3-8ca3f7ab4245",
+      "UnitPrice": 121808.0
+    },
+    {
+      "StuffId": "a7e65395-cdbf-43bc-9319-8fdfe703b2fc",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "be8b6d09-9c38-4f37-baeb-910ba0d911f4",
+      "UnitPrice": 5437000.0
+    },
+    {
+      "StuffId": "f62dd31b-c114-46a2-9011-927c01dc560e",
+      "UnitPrice": 180832.0
+    },
+    {
+      "StuffId": "f0a2317d-eefe-4314-9596-934e7e74a3cd",
+      "UnitPrice": 37500.0
+    },
+    {
+      "StuffId": "39758b49-34c2-4277-84aa-968df4f18c72",
+      "UnitPrice": 55565.0
+    },
+    {
+      "StuffId": "ad1a4fb5-f6cd-4cb4-a0be-9705f2e175d7",
+      "UnitPrice": 67561.0
+    },
+    {
+      "StuffId": "dd25e06c-b857-4ff7-ada0-973829a56eac",
+      "UnitPrice": 41700.0
+    },
+    {
+      "StuffId": "171a478f-12c9-4f7b-b6e9-97cf2ed7f82e",
+      "UnitPrice": 52730.0
+    },
+    {
+      "StuffId": "1777f1a3-2a56-463b-b50d-984f8259b7b8",
+      "UnitPrice": 613528.0
+    },
+    {
+      "StuffId": "2e3d1762-dc91-409e-ae1a-9be4ecc6b580",
+      "UnitPrice": 67561.0
+    },
+    {
+      "StuffId": "b764ce0e-f019-481e-9c29-9d194596cb36",
+      "UnitPrice": 350000.0
+    },
+    {
+      "StuffId": "e3c42f7b-b504-4b74-9960-9e7072e76145",
+      "UnitPrice": 12000.0
+    },
+    {
+      "StuffId": "9474dc5f-dc0b-470a-8a88-9e863f55777c",
+      "UnitPrice": 67561.0
+    },
+    {
+      "StuffId": "26106d7c-066f-4296-9bad-9ec037aa10f6",
+      "UnitPrice": 733385.0
+    },
+    {
+      "StuffId": "5af28fec-a8ee-43f3-9fc9-a047a336afd5",
+      "UnitPrice": 58689.8
+    },
+    {
+      "StuffId": "482aca43-d7f6-43f5-93cf-a25a0617755f",
+      "UnitPrice": 55565.0
+    },
+    {
+      "StuffId": "e8c070b7-1b0a-4684-941b-a27afc2827b1",
+      "UnitPrice": 190000.0
+    },
+    {
+      "StuffId": "61443912-c6c6-45ca-9b08-a2eabeeb859b",
+      "UnitPrice": 245675.0
+    },
+    {
+      "StuffId": "8c230e26-99fc-401f-a08d-a6ab5e39a1c9",
+      "UnitPrice": 48265.0
+    },
+    {
+      "StuffId": "8bf8ad00-b6b3-45c4-b5b1-a876097a688f",
+      "UnitPrice": 67561.0
+    },
+    {
+      "StuffId": "a567a448-4a08-496b-aa15-ab4cbad7519d",
+      "UnitPrice": 60876.0
+    },
+    {
+      "StuffId": "d6c15cc9-97b9-4248-a310-ae27b1bb93fa",
+      "UnitPrice": 79421.0
+    },
+    {
+      "StuffId": "9b9eceb7-f957-498a-bff7-afc450ccd91b",
+      "UnitPrice": 37500.0
+    },
+    {
+      "StuffId": "131453ec-f94c-4884-8201-b0faf4170bb3",
+      "UnitPrice": 385000.0
+    },
+    {
+      "StuffId": "f0f51fca-9b08-4e0f-b12e-b1234916861b",
+      "UnitPrice": 36451.0
+    },
+    {
+      "StuffId": "3d7e2da7-2cf5-4d7e-920d-b3838f3829b0",
+      "UnitPrice": 90000.0
+    },
+    {
+      "StuffId": "1aa32524-4104-45ce-a466-b71d38b4f6cf",
+      "UnitPrice": 44272.0
+    },
+    {
+      "StuffId": "e99aa16e-ad07-4a0e-8152-b8354388c0ff",
+      "UnitPrice": 52574.0
+    },
+    {
+      "StuffId": "b4a7f16e-cc04-4862-af72-b85c9c33ab93",
+      "UnitPrice": 50000.0
+    },
+    {
+      "StuffId": "acb0c2f8-beae-4abd-9da5-b891e4d94746",
+      "UnitPrice": 1000000.0
+    },
+    {
+      "StuffId": "140c1fd7-439a-4292-a55e-c1786fbd6e04",
+      "UnitPrice": 2718000.0
+    },
+    {
+      "StuffId": "793524a1-a9af-4833-9818-c24eda607e35",
+      "UnitPrice": 30999.0
+    },
+    {
+      "StuffId": "869f5f3a-8487-4e8c-bdf6-c26b45c13c75",
+      "UnitPrice": 88300.8333333333333333
+    },
+    {
+      "StuffId": "3cd80b80-eedd-4dde-87be-c6fb7c319e0f",
+      "UnitPrice": 203785.0
+    },
+    {
+      "StuffId": "33ed74ec-814f-4bad-8282-c847716b3c54",
+      "UnitPrice": 32180.0
+    },
+    {
+      "StuffId": "42363994-8094-47aa-a635-cbcc8f9e3f98",
+      "UnitPrice": 50227.0
+    },
+    {
+      "StuffId": "c380ae9c-eb59-4572-8450-cda206da057d",
+      "UnitPrice": 5735000.0
+    },
+    {
+      "StuffId": "90384201-5945-486c-802b-cf1033fadf8a",
+      "UnitPrice": 78417.0
+    },
+    {
+      "StuffId": "c312d1ac-e8f3-44b5-8e1b-d0628719c30b",
+      "UnitPrice": 49807.0
+    },
+    {
+      "StuffId": "ea8389fc-9b40-4e82-8fed-d1c6319db94c",
+      "UnitPrice": 32176.46875
+    },
+    {
+      "StuffId": "e1bad1b5-6792-4716-a71a-d1d575d88682",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "db53c799-8079-4fda-aa85-d1f1d120128a",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "50c5422e-0c03-46b5-bc9d-d2d5ec3d61e6",
+      "UnitPrice": 1000000.0
+    },
+    {
+      "StuffId": "f644ac3f-f907-4722-955f-d3b3183e5534",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "f9ede293-4c52-4a06-9ea1-d3cc94cf5144",
+      "UnitPrice": 50227.0
+    },
+    {
+      "StuffId": "a15a736c-4b6a-420c-96c2-d7905e5718b8",
+      "UnitPrice": 32176.46875
+    },
+    {
+      "StuffId": "40a488a4-3991-4233-bc88-d7aad6173399",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "4e1f901b-4302-4fef-9199-d9a9e5af2cdd",
+      "UnitPrice": 74385.0
+    },
+    {
+      "StuffId": "b2e87d56-6f29-4ebe-a408-db224f5dfc66",
+      "UnitPrice": 70513.0
+    },
+    {
+      "StuffId": "07334ef8-8032-4d61-8c35-db540abc0873",
+      "UnitPrice": 450507.0
+    },
+    {
+      "StuffId": "929f509c-1044-44f1-823f-db7afa9cd653",
+      "UnitPrice": 36451.5
+    },
+    {
+      "StuffId": "64370674-7f26-4a27-bd05-dbed670a816e",
+      "UnitPrice": 129000.0
+    },
+    {
+      "StuffId": "9f202a50-def0-46d1-b284-dc2ed1919718",
+      "UnitPrice": 4166.6666666666666666
+    },
+    {
+      "StuffId": "7c41bf41-73ba-4a91-881f-dc529d52f034",
+      "UnitPrice": 50227.0
+    },
+    {
+      "StuffId": "6fa83807-7683-404c-9428-dd9e869c06ff",
+      "UnitPrice": 14500.0
+    },
+    {
+      "StuffId": "55243160-d483-47b2-916b-ddd3154b5707",
+      "UnitPrice": 52574.0
+    },
+    {
+      "StuffId": "fda06509-59a5-4988-9fba-deb17b78e34b",
+      "UnitPrice": 732375.0
+    },
+    {
+      "StuffId": "137006ad-8a80-4de4-bc9c-e10735db1d57",
+      "UnitPrice": 50049.5
+    },
+    {
+      "StuffId": "3aac0d0a-dc8a-46a6-8260-e4dc17e76596",
+      "UnitPrice": 299150.0
+    },
+    {
+      "StuffId": "3b2acb56-2e4f-4909-b5b8-e7c08f20882f",
+      "UnitPrice": 150000.0
+    },
+    {
+      "StuffId": "8cf34f87-cb7c-4c1f-af93-e908f2099b63",
+      "UnitPrice": 350000.0
+    },
+    {
+      "StuffId": "ba0dc0de-1c0e-4610-a347-eafa5249b581",
+      "UnitPrice": 42096.0
+    },
+    {
+      "StuffId": "b14728c4-400a-458b-8c6e-ecf918ac3eb8",
+      "UnitPrice": 756275.0
+    },
+    {
+      "StuffId": "e5c1a3e1-8852-41c3-a920-edaf7dd5208b",
+      "UnitPrice": 733350.0
+    },
+    {
+      "StuffId": "7794b5a1-ae77-4ad5-8b69-ee538877abc8",
+      "UnitPrice": 298956.0
+    },
+    {
+      "StuffId": "088f8f5a-e509-4aeb-919d-ef7bb33df48e",
+      "UnitPrice": 42902.0
+    },
+    {
+      "StuffId": "5aca5442-1431-4499-af1d-f1407fb6907c",
+      "UnitPrice": 13083.0
+    },
+    {
+      "StuffId": "91fbc669-4889-446d-9203-f150031bcea9",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "34aa46c6-bf18-4678-85e1-f20bf45e8f32",
+      "UnitPrice": 50050.0
+    },
+    {
+      "StuffId": "c5a095ce-6405-44cf-8747-fc14a6ceadab",
+      "UnitPrice": 36452.0
+    },
+    {
+      "StuffId": "04201898-9a2e-46a9-a495-fe14c48e4e9c",
+      "UnitPrice": 215000.0
+    }
+  ],
+  "WarehouseId": "1490135e-2da3-42e1-880e-645978d85bbb",
+  "WarehouseName": "انبار گرمدره"
+}]

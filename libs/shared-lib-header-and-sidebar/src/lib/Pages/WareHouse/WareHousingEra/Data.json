@@ -1,0 +1,79 @@
+[
+  {
+    "PeriodCode": "7",
+    "PeriodName": "نخرید",
+    "PeriodType": "میان دوره",
+    "PeriodDate": "2021/10/03",
+    "Warehouse": "گیج",
+    "Storekeeper": "حمید رضا پرویزی",
+    "PeriodDescription": "نگیر نخر نیا",
+    "Status": "شمارش",
+    "WarehousingPeriodId": "dcf0801b-7ffb-4e0a-b479-480f28218650"
+  },
+  {
+    "PeriodCode": "6",
+    "PeriodName": "خرید",
+    "PeriodType": "میان دوره",
+    "PeriodDate": "2021/10/03",
+    "Warehouse": "انبار ضایعات",
+    "Storekeeper": "حمید رضا پرویزی",
+    "PeriodDescription": "بگیر بخر بیا",
+    "Status": "بالانس مغایرت ها",
+    "WarehousingPeriodId": "31cbb7ae-8177-404d-9bad-cec8a3b04d94"
+  },
+  {
+    "PeriodCode": "5",
+    "PeriodName": "انبار گردانی شهریور",
+    "PeriodType": "میان دوره",
+    "PeriodDate": "2021/07/11",
+    "Warehouse": "انبار اهواز",
+    "Storekeeper": "حمید رضا پرویزی",
+    "PeriodDescription": "",
+    "Status": "نهایی",
+    "WarehousingPeriodId": "1172efd0-35ba-4ef2-b96e-ff7efebeb482"
+  },
+  {
+    "PeriodCode": "4",
+    "PeriodName": "تست",
+    "PeriodType": "میان دوره",
+    "PeriodDate": "2021/06/30",
+    "Warehouse": "انبار ضایعات",
+    "Storekeeper": "حمید رضا پرویزی",
+    "PeriodDescription": "",
+    "Status": "نهایی",
+    "WarehousingPeriodId": "17022b80-3d2d-4361-92bb-a6bec6fe33ab"
+  },
+  {
+    "PeriodCode": "3",
+    "PeriodName": "انبار گردانی شهریور",
+    "PeriodType": "میان دوره",
+    "PeriodDate": "2021/06/29",
+    "Warehouse": "انبار گرمدره",
+    "Storekeeper": "حمید رضا پرویزی",
+    "PeriodDescription": " انبار گردانی انبار گرمدره",
+    "Status": "نهایی",
+    "WarehousingPeriodId": "985d168e-7365-4db5-a84d-fa098d8f4e83"
+  },
+  {
+    "PeriodCode": "2",
+    "PeriodName": "انبار گردانی نیمه اول 1400",
+    "PeriodType": "میان دوره",
+    "PeriodDate": "2020/06/16",
+    "Warehouse": "انبار اصلی",
+    "Storekeeper": "سجاد موسوی",
+    "PeriodDescription": "انبارگردانی تا تاریخ 1400/06/16 ",
+    "Status": "نهایی",
+    "WarehousingPeriodId": "20b8c3c1-e7b0-44a9-8513-86dfd2ae85c1"
+  },
+  {
+    "PeriodCode": "1",
+    "PeriodName": "انبارگردانی اول دوره 1397",
+    "PeriodType": "اول دوره",
+    "PeriodDate": "2019/01/01",
+    "Warehouse": "انبار اصلی",
+    "Storekeeper": "سجاد موسوی",
+    "PeriodDescription": "تراز انبارگردانی اول دوره سال مالی 1397",
+    "Status": "نهایی",
+    "WarehousingPeriodId": "32d7c23f-12e6-47c6-b72b-5ae5600fdfcd"
+  }
+]

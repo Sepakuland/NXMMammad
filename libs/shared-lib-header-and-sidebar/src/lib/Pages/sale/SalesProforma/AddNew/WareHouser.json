@@ -1,0 +1,26 @@
+[
+    {
+      "Id": "0a593fcb-0eba-4ba8-aa72-77a4a7e61922",
+      "Code": "20900001",
+      "Name": "عیوض داستانی",
+      "PersonTelephone": " ",
+      "PersonLegalName": "",
+      "DefaultPackageName": null,
+      "DefaultPackageId": "00000000-0000-0000-0000-000000000000",
+      "EntityGlobalType": 10209,
+      "PartnerAddress": "تهران صادقیه",
+      "StuffGroupCode": "",
+      "StuffBasketIds": [],
+      "Units": [],
+      "VATPercent": 0,
+      "SaleDefaultPackageId": null,
+      "SaleDefaultPackageUnitId": "",
+      "SaleDefaultPackageName": "",
+      "SaleDefaultPackageCoefficient": 0,
+      "BankAccountNumber": "",
+      "StuffDescription": "",
+      "MaxPackageCoefficient": 0,
+      "ExpirationDateFormat": null,
+      "EntityIsPerson": true
+    }
+  ]

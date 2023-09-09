@@ -1,0 +1,26 @@
+[
+    {
+      "Id": "46011fee-e1ef-4df4-9d28-9b318b7209f2",
+      "Code": "20900002",
+      "Name": "حمید رضا پرویزی",
+      "PersonTelephone": "",
+      "PersonLegalName": "",
+      "DefaultPackageName": null,
+      "DefaultPackageId": "00000000-0000-0000-0000-000000000000",
+      "EntityGlobalType": 10209,
+      "PartnerAddress": "تهران صادقیه",
+      "StuffGroupCode": "",
+      "StuffBasketIds": [],
+      "Units": [],
+      "VATPercent": 0,
+      "SaleDefaultPackageId": null,
+      "SaleDefaultPackageUnitId": "",
+      "SaleDefaultPackageName": "",
+      "SaleDefaultPackageCoefficient": 0,
+      "BankAccountNumber": "",
+      "StuffDescription": "",
+      "MaxPackageCoefficient": 0,
+      "ExpirationDateFormat": null,
+      "EntityIsPerson": true
+    }
+  ]

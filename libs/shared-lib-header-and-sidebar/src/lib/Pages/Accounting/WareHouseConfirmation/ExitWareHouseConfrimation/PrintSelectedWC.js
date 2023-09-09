@@ -1,0 +1,135 @@
+import React, { useEffect, useState, useRef } from 'react'
+import Print from 'sepakuland-component-print'
+import { FooterSome, CurrencyCell, TotalTitle,IndexCell } from "rkgrid";
+import { useTranslation } from "react-i18next";
+import PrintSelectedWCData from './PrintSelectedWCData.json'
+import { useSearchParams } from "react-router-dom";
+import CoddingIcon from "../../../../assets/images/Logo/CoddingIcon.jpg";
+
+const PrintSelectedWC = (props) => {
+
+    const { t, i18n } = useTranslation();
+    const [searchParams] = useSearchParams();
+    const lang = searchParams.get('lang')
+    const [data, setData] = useState([])
+    const dataRef = useRef()
+    dataRef.current = data
+
+    console.log(" props.dataItem.DocumentCode", props.dataItem)
+    useEffect(() => {
+        let tempData = PrintSelectedWCData.map((data) => {
+            let temp = (data.price).toString().replaceAll(',', '')
+            let temp2 = (data.amount).toString().replaceAll(',', '')
+            let cost = parseFloat(temp, 2)
+            let cost2 = parseFloat(temp2, 2)
+            return {
+                ...data,
+                price: cost,
+                amount: cost2,
+                productCode: parseInt(data.productCode),
+
+            }
+        })
+        setData(tempData)
+    }, [lang])
+
+    const CustomFooterSome = (props) => <FooterSome {...props} data={dataRef.current} />
+
+    let tempColumn = [
+        {
+            field: 'IndexCell',
+            width: '60px',
+            name: "ردیف",
+            cell: IndexCell,
+            footerCell: TotalTitle,
+        },
+        {
+            field: 'productCode',
+            name: "کد کالا",
+            // width: '60px',
+            filter: 'numeric',
+
+        },
+        {
+            field: 'productName',
+            name: "نام کالا",
+            // width: '60px',
+        },
+        {
+            field: 'count',
+            // width: '60px',
+            name: "تعداد",
+            footerCell: CustomFooterSome,
+            cell: CurrencyCell,
+        },
+        {
+            field: 'equipollent',
+            // width: '60px',
+            name: "معادل",
+            cell: CurrencyCell,
+            footerCell: CustomFooterSome,
+        },
+        {
+            field: 'price',
+            // width: '60px',
+            name: "فی",
+            cell: CurrencyCell,
+
+        },
+        {
+            field: 'amount',
+            // width: '60px',
+            name: "مبلغ	",
+            filter: 'numeric',
+            cell: CurrencyCell,
+            footerCell: CustomFooterSome,
+        },
+        {
+            field: 'Description',
+            width: '120px',
+            name: "توضیحات	",
+        },
+    ]
+
+    return (
+        <>
+            <Print
+                printData={data}
+                columnList={tempColumn}
+                logo={CoddingIcon}
+                title={t("نمایش جزییات")}
+                subTitle={t("چاپ حواله")}
+            >
+
+                <div className='row betweens'>
+                    <div className='col-lg-4 col-md-4 col-4'>{t("شماره حواله")}: 1088</div>
+                    <div className='col-lg-4 col-md-4 col-4'>{t("تحویل گیرنده")}: انبار ضایعات</div>
+                    <div className='col-lg-4 col-md-4 col-4'>{t("انباردار")}: حمید رضا پرویزی</div>
+                    <div className='col-lg-4 col-md-4 col-4'>{t("تاریخ حواله")}: 1401/06/28</div>
+                    <div className='col-lg-4 col-md-4 col-4'>{t("انبار تحویل دهنده")}: {t("انبار اصلی")}</div>
+                    <div className='col-lg-6 col-md-6 col-6'>{t("توضیحات ")}: ---</div>
+                </div>
+            </Print>
+            <div className='col-lg-10 col-md-10 col-10 row Signature'>
+                <div className='row Signature-Header'>
+                    <div className='col-lg-3 col-md-3 col-3 up'>{t("امضا تحویل گیرنده:")}</div>
+                    <div className='col-lg-3 col-md-3 col-3 up'>{t("امضا تحویل دهنده:")}</div>
+                </div>
+                <div className='row Signature-body'>
+                    <div className='col-lg-3 col-md-3 col-3 down'></div>
+                    <div className='col-lg-3 col-md-3 col-3 down'></div>
+                </div>
+
+            </div>
+        </>)
+}
+export default PrintSelectedWC
+
+
+
+
+
+
+
+
+
