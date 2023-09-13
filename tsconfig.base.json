@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@kara-erp/routing": ["libs/routing/src/index.ts"],
       "@kara-erp/shared-lib-header-and-sidebar": [
         "libs/shared-lib-header-and-sidebar/src/index.ts"
       ]

@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: IRANSansWeb;
+  font-family: IRANSansWeb!important;
 }
 
 /*input[type='number'],input[type='tel']{*/
@@ -20,6 +20,7 @@ body {
   direction: ltr;
 }
 
+.MuiDrawer-paperAnchorLeft,
 .MuiDrawer-paperAnchorDockedLeft {
   padding-top: 60px;
   right: 0;

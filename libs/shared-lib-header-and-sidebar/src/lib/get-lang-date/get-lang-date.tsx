@@ -1,0 +1,24 @@
+import styles from './get-lang-date.module.css';
+/* eslint-disable-next-line */
+import DateObject from 'react-date-object';
+import persian from 'react-date-object/calendars/persian';
+import arabic from 'react-date-object/calendars/arabic';
+import gregorian from 'react-date-object/calendars/gregorian';
+
+export function getLangDate(
+  lang: 'fa' | 'ar' | string,
+  data: Date | string
+): string {
+  const date = new DateObject(data);
+  switch (lang) {
+    case 'fa':
+      date.convert(persian);
+      break;
+    case 'ar':
+      date.convert(arabic);
+      break;
+    default:
+      date.convert(gregorian);
+  }
+  return date.format();
+}

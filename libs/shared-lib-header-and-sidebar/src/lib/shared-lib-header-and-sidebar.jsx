@@ -1,4 +1,3 @@
-import './shared-lib-header-and-sidebar.module.css';
 // import './wdyr'; // <--- first import
 
 import { HashRouter } from 'react-router-dom';
@@ -15,6 +14,7 @@ import './assets/third-party/apex-chart.css';
 // project import
 import { store } from './store/store';
 import Main from './main';
+import './shared-lib-header-and-sidebar.module.css';
 
 export function SharedLibHeaderAndSidebar() {
   return (

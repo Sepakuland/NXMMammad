@@ -1,5 +1,3 @@
-
-
 // ==============================|| MAIN - REACT DOM RENDER  ||============================== //
 //   backend();
 import React, { useEffect } from 'react';
@@ -15,12 +13,10 @@ import { HelmetProvider } from 'react-helmet-async';
 import ThemeCustomization from './themes';
 import ScrollTop from './components/ScrollTop';
 import Routes from './routes';
-import './leaflet.draw.css'
+import './leaflet.draw.css';
 
 
 const Main = () => {
- 
-
   const { t, i18n } = useTranslation();
   const theme = useTheme();
 

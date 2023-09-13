@@ -46,7 +46,7 @@ const MainLayout = () => {
   }, [drawerOpen]);
   const { t, i18n } = useTranslation();
   return (
-    <div>
+    <div contentEditable>
       {i18n.language === 'en' ? (
         <Box sx={{ display: 'fixed', width: '100%', direction: 'ltr' }}>
           <Header open={open} handleDrawerToggle={handleDrawerToggle} />
