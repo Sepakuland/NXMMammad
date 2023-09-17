@@ -1,4 +1,4 @@
-import { apiSlice } from "../api-slice";
+import { apiSlice } from "../features";
 
 export const accountingDocumentArticlesApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({

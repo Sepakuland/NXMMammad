@@ -7,30 +7,35 @@ import { useTranslation } from 'react-i18next';
 import { FormikProvider, useFormik } from 'formik';
 import * as Yup from 'yup';
 import swal from 'sweetalert';
-import { getLangDate, julianIntToDate, julianIntToDateTime } from '@kara-erp/shared-lib-header-and-sidebar';
+import {
+  julianIntToDate,
+  julianIntToDateTime,
+} from '@kara-erp/shared-lib-header-and-sidebar';
+
 import {
   renderCalendarLocaleSwitch,
   renderCalendarSwitch,
-} from '@kara-erp/shared-lib-header-and-sidebar/src/lib/utils/calenderLang';
+} from '@kara-erp/shared-lib-header-and-sidebar';
 import DatePicker from 'react-multi-date-picker';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import { parsFloatFunction } from '@kara-erp/shared-lib-header-and-sidebar/src/lib/utils/parsFloatFunction';
+import { parsFloatFunction } from '@kara-erp/shared-lib-header-and-sidebar';
 import DateObject from 'react-date-object';
 import { useNavigate } from 'react-router-dom';
 import Guid from 'devextreme/core/guid';
-import { useFetchBranchesQuery } from '@kara-erp/shared-lib-header-and-sidebar/src/lib/features/slices/branchSlice';
-import { useGetAllDocumentDefinitionQuery } from '@kara-erp/shared-lib-header-and-sidebar/src/lib/features/slices/DocumentDefinitionSlice';
+import { useFetchBranchesQuery } from '@kara-erp/shared-lib-header-and-sidebar';
+import { useGetAllDocumentDefinitionQuery } from '@kara-erp/shared-lib-header-and-sidebar';
 import {
   useCreateAccountingDocumentMutation,
   useGetAccountingDocumentFormDataQuery,
   useGetNextDocumentNumbersQuery,
-} from '@kara-erp/shared-lib-header-and-sidebar/src/lib/features/slices/accountingDocumentSlice';
-import { CreateQueryString } from '@kara-erp/shared-lib-header-and-sidebar/src/lib/utils/createQueryString';
+} from '@kara-erp/shared-lib-header-and-sidebar';
+import { CreateQueryString } from '@kara-erp/shared-lib-header-and-sidebar';
 import Swal from 'sweetalert2';
 import { useSelector } from 'react-redux';
-import { AccountingTitles } from '@kara-erp/shared-lib-header-and-sidebar/src/lib/utils/pageTitles';
+import { AccountingTitles } from '@kara-erp/shared-lib-header-and-sidebar';
 import { Helmet } from 'react-helmet-async';
 import { InputGrid } from './InputGrid';
+// import { InputGrid } from './InputGrid';
 
 export default function KaraDataGrid() {
   const [SearchParams] = useSearchParams();
@@ -87,7 +92,7 @@ export default function KaraDataGrid() {
     ) {
       let copyValues = JSON.parse(JSON.stringify(accountingDocumentRes));
       let branch = branchDatasource.find(
-        (a) => a.branchId == accountingDocumentRes.branchId
+        (a) => a.branchId === accountingDocumentRes.branchId
       );
       copyValues.folioNumber = branch.folioNumber + branch.nextFolioNumber;
       copyValues.documentArticles.forEach((article) => {
@@ -148,7 +153,7 @@ export default function KaraDataGrid() {
 
   const [createDocument, createResults] = useCreateAccountingDocumentMutation();
   useEffect(() => {
-    if (createResults.status == 'fulfilled' && createResults.isSuccess) {
+    if (createResults.status === 'fulfilled' && createResults.isSuccess) {
       DocumentSub();
     } else if (createResults.isError) {
       let arr = createResults.error.map((item) => t(item));
@@ -710,7 +715,7 @@ export default function KaraDataGrid() {
                               onValueChanged={(e) => {
                                 formik.setFieldValue('branchId', e.value);
                                 var branch = branchDatasource.find(
-                                  (a) => a.branchId == e.value
+                                  (a) => a.branchId === e.value
                                 );
                                 formik.setFieldValue(
                                   'folioNumber',

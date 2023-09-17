@@ -5,11 +5,8 @@ import persian from 'react-date-object/calendars/persian';
 import arabic from 'react-date-object/calendars/arabic';
 import gregorian from 'react-date-object/calendars/gregorian';
 
-export function getLangDate(
-  lang: 'fa' | 'ar' | string,
-  data: Date | string
-): string {
-  const date = new DateObject(data);
+export function getLangDate(lang, data) {
+  let date = new DateObject(data);
   switch (lang) {
     case 'fa':
       date.convert(persian);

@@ -17,6 +17,7 @@ import Main from './main';
 import './shared-lib-header-and-sidebar.module.css';
 
 export function SharedLibHeaderAndSidebar() {
+  console.log('===== test ======');
   return (
     <ReduxProvider store={store}>
       <HashRouter>

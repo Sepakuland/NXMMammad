@@ -1,5 +1,5 @@
 import { CodeSandboxCircleFilled } from '@ant-design/icons';
-import { apiSlice } from '../api-slice'
+import { apiSlice } from '../features'
 
 export const codingApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
