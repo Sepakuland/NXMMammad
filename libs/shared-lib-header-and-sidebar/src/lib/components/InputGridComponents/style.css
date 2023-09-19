@@ -1,244 +1,247 @@
-@import "../../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
-@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import '../../../../../../node_modules/bootstrap/dist/css/bootstrap-grid.css';
+@import '../../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../../../../../node_modules/devextreme/dist/css/dx.light.css';
+
+@import 'devextreme/dist/css/dx.light.css';
 
 @font-face {
-    font-family: IRANSansWeb;
-    src: url("./assets/fonts/IRANSansWeb.woff") format("woff"),
-        url("./assets/fonts/IRANSansWeb.woff2") format("woff2");
+  font-family: IRANSansWeb;
+  src: url('./assets/fonts/IRANSansWeb.woff') format('woff'),
+    url('./assets/fonts/IRANSansWeb.woff2') format('woff2');
 }
 
 .row {
-    margin-bottom: -10px;
+  margin-bottom: -10px;
 }
 
-.row>[class*="col-"] {
-    margin-bottom: 15px;
+.row > [class*='col-'] {
+  margin-bottom: 15px;
 }
 
 .span-ltr span {
-    display: block;
-    direction: ltr;
+  display: block;
+  direction: ltr;
 }
 
 .grid-add-btn {
-    min-width: auto !important;
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 5px !important;
+  min-width: auto !important;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px !important;
 }
 
 .table-autocomplete div,
 .table-autocomplete input {
-    font-size: 11px !important;
+  font-size: 11px !important;
 }
 
 .table-autocomplete div {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 .sticky-h-f {
-    max-height: 295px;
-    overflow-y: auto;
+  max-height: 295px;
+  overflow-y: auto;
 }
 
 .sticky-h-f table {
-    position: relative;
-    margin: 0 !important;
+  position: relative;
+  margin: 0 !important;
 }
 
 .sticky-h-f tr:nth-child(even) {
-    background-color: #e9ecef6c;
+  background-color: #e9ecef6c;
 }
 
 .sticky-h-f thead tr,
 .sticky-h-f tfoot tr {
-    border-top: 0 !important;
-    border-bottom: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
 }
 
 .sticky-h-f tfoot td,
 .sticky-h-f th {
-    background-color: #f6f7f8;
-    position: sticky;
-    border-top: 0;
-    border-bottom: 0;
-    padding: 6px 4px !important;
-    z-index: 9;
+  background-color: #f6f7f8;
+  position: sticky;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 6px 4px !important;
+  z-index: 9;
 }
 
 .sticky-h-f th {
-    top: -1px;
+  top: -1px;
 }
 
 .sticky-h-f tfoot td {
-    bottom: -1px;
+  bottom: -1px;
 }
 
 .sticky-h-f tfoot td:before,
 .sticky-h-f th:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #e1e1e1;
-    top: 0;
-    right: 0;
-    left: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .sticky-h-f th:before {
-    top: 1px;
+  top: 1px;
 }
 
 .sticky-h-f tfoot td:after,
 .sticky-h-f th:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #e1e1e1;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .sticky-h-f tfoot td:after {
-    bottom: 1px;
+  bottom: 1px;
 }
 
 .sticky-h-f th:last-child,
 .sticky-h-f td:last-child {
-    border-right-width: 1px;
+  border-right-width: 1px;
 }
 
 .sticky-h-f tr:last-child td {
-    border-bottom-width: 1px;
+  border-bottom-width: 1px;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 table td.text-center input {
-    text-align: center;
+  text-align: center;
 }
 
 .error-msg {
-    display: block;
-    color: red;
-    font-size: 12px;
-    margin-top: 7px;
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-top: 7px;
 }
 
 .form-design .form-input {
-    border: 1px solid #e1e1e1;
-    font-family: IRANSansWeb;
-    background: #e9ecefd2;
-    padding: 7px 5px;
-    font-size: 11px;
-    box-sizing: border-box;
-    max-width: 100% !important;
-    height: 30px;
-    outline: 0;
-    width: 100%;
+  border: 1px solid #e1e1e1;
+  font-family: IRANSansWeb;
+  background: #e9ecefd2;
+  padding: 7px 5px;
+  font-size: 11px;
+  box-sizing: border-box;
+  max-width: 100% !important;
+  height: 30px;
+  outline: 0;
+  width: 100%;
 }
 
 .form-design textarea.form-input {
-    height: 100px;
+  height: 100px;
 }
 
 .form-design .form-input:disabled {
-    background: #e9ecef6c !important;
-    border: 1px solid #e1e1e1;
+  background: #e9ecef6c !important;
+  border: 1px solid #e1e1e1;
 }
 
 .form-design .form-input:disabled {
-    background: #e9ecef6c !important;
-    border: 1px solid #e1e1e1;
+  background: #e9ecef6c !important;
+  border: 1px solid #e1e1e1;
 }
 
 .balanceFieldGreen {
-    background-color: #a0e5a0;
+  background-color: #a0e5a0;
 }
 
 .gridRow .balanceFieldRed .form-input {
-    background: inherit !important;
-    /*border-color: rgb(255, 170, 170)!important;*/
+  background: inherit !important;
+  /*border-color: rgb(255, 170, 170)!important;*/
 }
 
 .gridRow .balanceFieldGreen .form-input {
-    background: inherit !important;
-    /*border-color: #a0e5a0!important;*/
+  background: inherit !important;
+  /*border-color: #a0e5a0!important;*/
 }
 
 @media screen and (max-width: 425px) {
-    .gridRow {
-        width: 100vw;
-        max-width: 100%;
-    }
+  .gridRow {
+    width: 100vw;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .gridRow {
-        width: 100%;
-        max-width: 100%;
-    }
+  .gridRow {
+    width: 100%;
+    max-width: 100%;
+  }
 
-    .MuiButtonBase-root {
-        font-size: 12px;
-    }
+  .MuiButtonBase-root {
+    font-size: 12px;
+  }
 }
 
 .gridRow.dark,
 .gridRow.dark thead th,
 .gridRow.dark td {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .gridRow .focus-row-bg {
-    background: rgba(25, 118, 210, 0.12) !important;
+  background: rgba(25, 118, 210, 0.12) !important;
 }
 
 .gridRow.dark .focus-row-bg {
-    background: rgb(25 118 210 / 53%) !important;
+  background: rgb(25 118 210 / 53%) !important;
 }
 
 .gridRow thead th,
 .gridRow tfoot td {
-    font-size: 11px;
-    font-weight: normal;
+  font-size: 11px;
+  font-weight: normal;
 }
 
 .gridRow td,
 .gridRow th {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .gridRow tbody td:last-child {
-    text-align: center;
+  text-align: center;
 }
 
 .gridRow .form-input {
-    background: #fff !important;
+  background: #fff !important;
 }
 
 .gridRow.disable-field .form-input:disabled {
-    background: #e9ecef6c !important;
+  background: #e9ecef6c !important;
 }
 
 .gridRow td,
 .gridRow th {
-    padding: 4px !important;
-    font-size: 12px;
+  padding: 4px !important;
+  font-size: 12px;
 }
 
 .gridRow thead th,
 .gridRow tfoot td {
-    /*font-size: 13px;*/
-    font-weight: bolder;
+  /*font-size: 13px;*/
+  font-weight: bolder;
 }

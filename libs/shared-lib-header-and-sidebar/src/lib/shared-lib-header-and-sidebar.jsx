@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router-dom';
 
 // scroll bar
 import '../../../../node_modules/simplebar/dist/simplebar.css';
+import './components/i18n';
 
 // third-party
 import { Provider as ReduxProvider } from 'react-redux';

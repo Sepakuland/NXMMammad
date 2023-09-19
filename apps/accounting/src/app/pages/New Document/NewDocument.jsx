@@ -34,7 +34,7 @@ import Swal from 'sweetalert2';
 import { useSelector } from 'react-redux';
 import { AccountingTitles } from '@kara-erp/shared-lib-header-and-sidebar';
 import { Helmet } from 'react-helmet-async';
-import { InputGrid } from './InputGrid';
+// import { InputGrid } from './InputGrid';
 // import { InputGrid } from './InputGrid';
 
 export default function KaraDataGrid() {
@@ -833,7 +833,7 @@ export default function KaraDataGrid() {
                       <div className="col-12 mb-0">
                         <div className="row row-8">
                           <div className="col-lg-12 col-12">
-                            <InputGrid
+                            {/* <InputGrid
                               formik={formik}
                               creditsTotal={creditsTotal}
                               debitsTotal={debitsTotal}
@@ -841,7 +841,7 @@ export default function KaraDataGrid() {
                               setDebitsTotal={setDebitsTotal}
                               showArticles={showArticles}
                               setShowArticles={setShowArticles}
-                            />
+                            /> */}
                           </div>
                         </div>
                       </div>

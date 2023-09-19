@@ -12,6 +12,21 @@ const NewDocument = Loadable(
     )
   )
 );
+const Coding = Loadable(
+  lazy(() =>
+    import('../../../../../apps/accounting/src/app/pages/Coding/Coding')
+  )
+);
+const Grid = Loadable(
+  lazy(() =>
+    import('../../../../../apps/accounting/src/app/pages/Coding/Grid')
+  )
+);
+const DocumentGrid = Loadable(
+  lazy(() =>
+    import('../../../../../apps/accounting/src/app/pages/Document/Document')
+  )
+);
 
 const MainRoutes = {
   path: '/',
@@ -28,6 +43,34 @@ const MainRoutes = {
           path: 'NewDocument',
           element: <NewDocument />,
         },
+        {
+          path: 'coding',
+          element: <Coding />,
+        },
+        {
+          path: "Grid",
+          element: <Grid />,
+        },
+        {
+          path: "Document",
+          element: <DocumentGrid />,
+        },
+        // {
+        //   path: "Document/Trash",
+        //   element: <DocumentTrashGrid />,
+        // },
+        // {
+        //   path: "Document/Control",
+        //   element: <DocumentControlGrid />,
+        // },
+        // {
+        //   path: "Document/Archive",
+        //   element: <DocumentArchiveGrid />,
+        // },
+        // {
+        //   path: "ConfirmationDocuments",
+        //   element: <DocumentArchiveGrid />,
+        // },
       ],
     },
   ],

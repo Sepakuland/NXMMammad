@@ -4,11 +4,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'bootstrap/dist/css/bootstrap-grid.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import '../../../node_modules/devextreme/dist/css/dx.light.css';
+@import 'devextreme/dist/css/dx.light.css';
 
 @font-face {
   font-family: IRANSansWeb;
-  src: url('./app/Header/assets/fonts/IRANSansWeb.woff') format('woff'),
-    url('./app/Header//assets/fonts/IRANSansWeb.woff2') format('woff2');
+  src: url('../../../libs/shared-lib-header-and-sidebar/src/lib/assets/fonts/IRANSansWeb.woff')
+      format('woff'),
+    url('../../../libs/shared-lib-header-and-sidebar/src/lib/assets/fonts/IRANSansWeb.woff2')
+      format('woff2');
 }
 
 body {
@@ -22,7 +26,6 @@ body {
 .ltr-direction {
   direction: ltr;
 }
-
 
 .MuiDrawer-paperAnchorDockedLeft {
   padding-top: 60px;

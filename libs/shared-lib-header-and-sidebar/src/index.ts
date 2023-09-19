@@ -1,7 +1,4 @@
-export * from './lib/input-mask/input-mask';
-export * from './lib/object-not-null/object-not-null';
-export * from './lib/input-mask/input-mask';
-export * from './lib/object-not-null/object-not-null';
+
 export * from './lib/features/features';
 export * from './lib/page-titles/page-titles';
 export * from './lib/create-query-string/create-query-string';
@@ -26,3 +23,14 @@ export * from './lib/features/slices/commonSystemSettingsSlice';
 export * from './lib/features/slices/customerChosenCodingSlice';
 export * from './lib/features/slices/detailedTypeSlice';
 export * from './lib/features/slices/detailedAccountSlice';
+export * from './lib/assets/fonts/IRANSansWeb.woff';
+export * from './lib/assets/fonts/IRANSansWeb.woff2';
+export { default as InputMask } from './lib/input-mask/input-mask';
+export { default as objectNotNull } from './lib/object-not-null/object-not-null';
+export { default as CodingSettings } from './lib/components/Modals/Coding/CodingSettings';
+export { default as CreateCodingModal } from './lib/components/Modals/Coding/CreateCodingModal';
+export { default as MergeCodingModal } from './lib/components/Modals/Coding/MergeCodingModal';
+export { default as UpdateCodingModal } from './lib/components/Modals/Coding/UpdateCodingModal';
+export * from './lib/features/slices/customerChosenCodingSlice';
+export * from './lib/utils/Enums/DocumentStateEnum';
+export * from './lib/utils/history';
